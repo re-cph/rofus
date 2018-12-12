@@ -92,7 +92,7 @@
 
 /* Reposition video END */
 #backgroundContainer {
-  background-image: url(/images/baggrund.jpg);
+  background-image: url(../images/baggrund.jpg);
   background-size: cover;
   background-position: 50% 50%;
 }
