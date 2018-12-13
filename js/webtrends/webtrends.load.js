@@ -7,7 +7,7 @@ window.webtrendsAsyncInit=function(){
         dcsid:"dcs222a7vz1xbblhc1uujwjif_9p5w",
         domain:"statse.webtrendslive.com",
         timezone:1,
-        fpcdom:".rofus.dk",
+        fpcdom:".rofus.nu",
         plugins:{
         }
         }).track();
