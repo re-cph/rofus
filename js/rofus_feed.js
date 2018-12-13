@@ -31,7 +31,11 @@ $(document).ready(function() {
 
     $('#news-bg').show();
     $('#news.faq').html(news);
-    $('#news.faq .news-item a').attr('href', $('#news.faq .news-item a').attr('href')).attr('target', '_blank');
+
+    $('#news.faq .news-item a').each(function(index) {
+      $(this).attr('href', $(this).attr('href')).attr('target', '_blank');
+    });
+
 
   }
 
