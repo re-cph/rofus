@@ -35,7 +35,7 @@ $(document).ready(function() {
 
   }
 
-crossDomainAjax('https://spillemyndigheden.dk/json/rofus?_format=json', function (data) {
+crossDomainAjax('https://www.spillemyndigheden.dk/json/rofus?_format=json', function (data) {
     // success logic
    JSON2HTML(data);
 });
