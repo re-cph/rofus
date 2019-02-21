@@ -29,6 +29,9 @@
   p {
     line-height: 28px !important;
   }
+  p.disclaimer {
+    line-height: 20px !important;
+  }
   /* KITCHEN SINK */
   .header .container,
   .wrapper,

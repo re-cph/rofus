@@ -32,3 +32,8 @@
   line-height: 36px;
   margin: 16px 0;
 }
+.header p.disclaimer{
+  font-size: 10pt;
+  font-weight: normal;
+  line-height: 20px;
+}

@@ -41,6 +41,11 @@ h1, h2, h3,
 p {
   line-height: 26px;
 }
+p.disclaimer{
+  font-size: 10pt;
+  font-style: italic; 
+  line-height: 20px;
+}
 p,
 .container,
 .footer,
