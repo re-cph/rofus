@@ -116,6 +116,11 @@
   .footer {
     margin-top: 80px !important;
   }
+  .header .wrapper,
+  .video,
+  .scanlines {
+    height: 650px;
+  }
 }
 @media(max-width: 659px) {
 }
