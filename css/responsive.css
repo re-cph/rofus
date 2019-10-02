@@ -50,6 +50,9 @@
   .header .container ul {
     width: 100%;
   }
+  .header .checkmark-container {  /* text is not so clear on mobile */
+    font-weight: 600;
+  }
   #video-button {
     padding-top: 32px;
     padding-left: 0;
@@ -57,6 +60,9 @@
   }
   .semi-center {
     text-align: center;
+  }
+  .scanlines{
+    opacity: 0.9;
   }
   /* FAQ */
   .faq {
