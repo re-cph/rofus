@@ -5,7 +5,7 @@ $(document).ready(function() {
     // var monthNames = ['januar','februar', 'marts', 'april', 'maj', 'juni', 'juli', 'august', 'september', 'oktober', 'november', 'december'];
 
     var news = '<div class="crown fr"></div>\n';
-    news += '<h2>Nyt om ROFUS fra spillemyndigheden.dk</h2>\n';
+    news += '<h2 id="news-header">Nyt om ROFUS fra spillemyndigheden.dk</h2>\n';
     news += '<hr />\n';
 
     for (i = 0; i < nodes.length; i++) {
