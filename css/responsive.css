@@ -37,9 +37,16 @@
   .wrapper,
   .faq {
     width: 100%;
-    padding: 0px 20px;
+    padding: 0;
+    padding: 0 20px;
     box-sizing: border-box;
   }
+  .header .wrapper,
+  .header .wrapper .container{
+    padding: 0;
+    margin: 0;
+  }
+
   /* HEADER */
   .header .container h1 {
     line-height: 1em;
@@ -53,6 +60,7 @@
   .header .checkmark-container {  /* text is not so clear on mobile */
     font-weight: 600;
   }
+
   #video-button {
     padding-top: 32px;
     padding-left: 0;
@@ -89,6 +97,11 @@
 @media(min-width: 660px) {
   .hide-desktop {
     display: none;
+  }
+}
+@media(max-width: 500px) {
+  .part-one{
+    padding-top: 50px; 
   }
 }
 @media(max-width: 499px) {

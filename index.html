@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
   <meta charset="UTF-8">
   <meta name="description" content="Registrér dig i ROFUS med NemID og udeluk dig selv fra alt pengespil online og på fysiske kasinoer.">
   <title>ROFUS - Register Over Frivilligt Udelukkede Spillere</title>
@@ -62,10 +62,11 @@ a.appendChild(r);
   </div>
 -->
 <div id="login">
-  <a target="_blank" title="Log på ROFUS med NemID" href="https://rofusweb.spillemyndigheden.dk">Log på ROFUS med NemID</a>
+  <a target="_blank" href="https://rofusweb.spillemyndigheden.dk">Log på ROFUS med NemID</a>
 </div>
+<main>
 <!-- HEADER -->
-  <div class="header clearfix">
+  <div role="region" aria-labelledby="header" class="header clearfix">
     <div class="video clearfix" id="backgroundContainer"></div>
 <!--
     <div class="video clearfix" id="videoContainer">
@@ -98,25 +99,27 @@ a.appendChild(r);
     <!-- CONTAINER -->
     <div class="wrapper">
       <div class="container clearfix">
-        <h1>ROFUS</h1>
+        <div class="bg-contrast">
+          <h1>ROFUS</h1>
 
-        <p>I ROFUS kan du frivilligt udelukke dig selv fra onlinespil og fysiske kasinoer i Danmark.</p>
+          <p>I ROFUS kan du frivilligt udelukke dig selv fra onlinespil og fysiske kasinoer i Danmark.</p>
 
-        <!-- CHECKLIST -->
-        <div class="checkmark-container">
-          <div class="checkmark cl"><div class="text">Tag en 24 timers spillepause</div></div>
-          <div class="checkmark cl"><div class="text">Midlertidig udelukkelse i 1, 3 eller 6 måneder</div></div>
-          <div class="checkmark cl"><div class="text">Endelig udelukkelse</div></div>
-        </div>
+          <!-- CHECKLIST -->
+          <div class="checkmark-container">
+            <div class="checkmark cl"><div class="text">Tag en 24 timers spillepause</div></div>
+            <div class="checkmark cl"><div class="text">Midlertidig udelukkelse i 1, 3 eller 6 måneder</div></div>
+            <div class="checkmark cl"><div class="text">Endelig udelukkelse</div></div>
+          </div>
 
-        <!-- BUTTON -->
-        <div class="semi-center">
-          <a href="https://rofusweb.spillemyndigheden.dk" class="orange-button button">
-            Registrér dig i ROFUS med nemid
-          </a>
-          <p class="disclaimer">
-            Vær opmærksom på, at Spillemyndigheden tager forbehold for eventuelle tekniske fejl i ROFUS og kan således ikke holdes ansvarlig for dette
-          </p>
+          <!-- BUTTON -->
+          <div class="semi-center">
+            <a href="https://rofusweb.spillemyndigheden.dk" class="orange-button button">
+              Registrér dig i ROFUS med nemid
+            </a>
+            <p class="disclaimer">
+              Vær opmærksom på, at Spillemyndigheden tager forbehold for eventuelle tekniske fejl i ROFUS og kan således ikke holdes ansvarlig for dette
+            </p>
+          </div>
         </div>
 <!--
         <div id="video-button" onclick="openVideoPopup()"><span class="video-button-play button"></span><span id="video-button-text">Se videoen med lyd</span></div>
@@ -126,7 +129,7 @@ a.appendChild(r);
   </div>
 
 <!-- PART ONE -->
-  <div class="wrapper clearfix">
+  <div role="region" aria-labelledby="region1" class="wrapper clearfix">
     <div class="part-one clearfix">
       <div class="crown"></div>
       <h2>ROFUS er Spille&shy;myndig&shy;hedens register<br />
@@ -169,7 +172,7 @@ a.appendChild(r);
   </div>
 
 <!-- NEWS SECTION -->
-  <div id="news-bg" class="hidden">
+  <div role="region" aria-labelledby="region2" id="news-bg" class="hidden">
     <div class="wrapper clearfix">
       <div id="news" class="faq">
       </div>
@@ -177,11 +180,11 @@ a.appendChild(r);
   </div>
 
 <!-- PART TWO -->
-  <div class="part-two clearfix">
+  <div role="region" aria-labelledby="region3" class="part-two clearfix">
     <div class="tile test fl">
       <div class="center">
         <div class="icon-chip"></div>
-        <p>Spiller du for meget?</p>
+        <h2>Spiller du for meget?</h2>
         <a href="http://ludomani.dk/spiller/tag-en-test" class="test-yourself-button button">Test dig selv</a>
       </div>
     </div>
@@ -203,7 +206,7 @@ a.appendChild(r);
   </div>
 
 <!-- PART THREE -->
-  <div class="wrapper clearfix">
+  <div role="region" aria-labelledby="region4" class="wrapper clearfix">
     <div class="part-three clearfix">
       <div class="crown fr"></div>
       <h2>Værd at vide om ROFUS</h2>
@@ -231,7 +234,7 @@ a.appendChild(r);
     </div>
   </div>
 <!-- FOOTER -->
-  <div class="footer clearfix">
+  <div role="region" aria-labelledby="footer" class="footer clearfix">
     <p style="display: inline-block;">
       <span class="subdot fl">Spillemyndigheden</span><br class="hide-br" />
       <span class="hide-dot dot fl">·</span><span class="subdot fl">Englandsgade&nbsp;25,&nbsp;6.&nbsp;sal</span><br class="hide-br" />
@@ -240,5 +243,7 @@ a.appendChild(r);
       <span class="hide-dot dot fl">·</span><span class="subdot fl">CVR:&nbsp;34730415</span><br class="hide-br" />
     </p>
   </div>
+
+</main>
 </body>
 </html>

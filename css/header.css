@@ -4,7 +4,7 @@
 }
 .header .wrapper {
   display: flex;
-  height: 572px;
+  margin-top: 15px; 
 }
 .header .container {
   margin: 0 auto;
