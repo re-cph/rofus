@@ -110,12 +110,16 @@ hr {
 #news-bg p:last-of-type {
   margin-bottom: 0;
 }
+#news-bg{
+  margin-bottom: 0;
+  padding-top: 50px;
+}
 
 #news-bg,
 .part-one {
   padding-bottom: 50px;
 }
-#news,
+
 .part-three {
   padding-top: 50px;
 }
