@@ -1,19 +1,20 @@
 .footer {
-  display: inline-flex;
   text-align: center;
   width: 100%;
-  min-height: 150px;
   margin-top: 150px;
   background-color: #5d6673;
+  padding: 5rem 0;
+}
+.footer .address {
+  display: inline-flex;
 }
 
-.footer p {
+.footer .address p {
   display: inline-block;
-  padding-top: 64px;
   color: white;
 }
 
-.footer .dot {
+.footer .address .dot {
   width: 50px;
 }
 
@@ -24,4 +25,8 @@
 .footer a:hover {
   color: white;
   text-decoration: none;
+}
+.accessebility{
+  padding: 1.5rem 0 0 0;
+  text-align: center;
 }
