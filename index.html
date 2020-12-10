@@ -30,52 +30,59 @@
   <link href="css/footer.css" rel="stylesheet">
   <link href="css/header.css" rel="stylesheet">
   <link href="css/tile.css" rel="stylesheet">
-  <link href="css/video.css" rel="stylesheet">
   <link href="css/responsive.css" rel="stylesheet">
-  <link href="css/responsive_video.css" rel="stylesheet">
 </head>
 <body>
 
-<div id="login">
-  <a target="_blank" href="https://rofusweb.spillemyndigheden.dk">Log på ROFUS med NemID</a>
+<div class="login-container">
+  <a class="login-wrapper" target="_blank" href="https://rofusweb.spillemyndigheden.dk">
+    <img src="/images/logo_toggle.png" class="login-logo"/>
+    <div class="login-content">
+      <div class="login-content__text">Log på ROFUS med NemID</div>
+      <img class="login-content__lock" src="/images/digital_signatur_lock.png" />
+    </div>
+  </a>
 </div>
+
 <main>
 <!-- HEADER -->
-  <div class="header clearfix">
-    <div class="video clearfix" id="backgroundContainer"></div>
-    <div class="blackground"></div>
-
-    <div class="shadeWrapper">
-      <div class="shadeContainer image" id="shadeContainer">
-        <div class="shadeLeft fl"></div>
-        <div class="shadeRight fr"></div>
+  <div class="header">
+    <div class="header-bg">
+      <div class="background"></div>
+      <div class="blackground"></div>
+  
+      <div class="shadeWrapper">
+        <div class="shadeContainer image">
+          <div class="shadeLeft fl"></div>
+          <div class="shadeRight fr"></div>
+        </div>
       </div>
+  
+      <div class="scanlines center"></div>
     </div>
 
-    <div class="scanlines clearfix center"></div>
-    <!-- CONTAINER -->
-    <div role="region" aria-labelledby="header" class="wrapper">
-      <div class="container clearfix">
-        <div class="bg-contrast">
-          <h1 id="header">ROFUS</h1>
-
-          <p>I ROFUS kan du frivilligt udelukke dig selv fra onlinespil og fysiske kasinoer i Danmark.</p>
-
-          <!-- CHECKLIST -->
-          <div class="checkmark-container">
-            <div class="checkmark cl"><div class="text">Tag en 24 timers spillepause</div></div>
-            <div class="checkmark cl"><div class="text">Midlertidig udelukkelse i 1, 3 eller 6 måneder</div></div>
-            <div class="checkmark cl"><div class="text">Endelig udelukkelse</div></div>
-          </div>
-
-          <!-- BUTTON -->
-          <div class="semi-center">
-            <a href="https://rofusweb.spillemyndigheden.dk" class="orange-button button">
-              Registrér dig i ROFUS med nemid
-            </a>
-            <p class="disclaimer">
-              Vær opmærksom på, at Spillemyndigheden tager forbehold for eventuelle tekniske fejl i ROFUS og kan således ikke holdes ansvarlig for dette
-            </p>
+    <div class="header-content">
+      <div role="region" aria-labelledby="header" class="wrapper">
+        <div class="container">
+          <div class="bg-contrast">
+            <p>I ROFUS kan du frivilligt udelukke dig selv fra onlinespil og fysiske kasinoer i Danmark.</p>
+  
+            <!-- CHECKLIST -->
+            <div class="checkmark-container">
+              <div class="checkmark cl"><div class="text">Tag en 24 timers spillepause</div></div>
+              <div class="checkmark cl"><div class="text">Midlertidig udelukkelse i 1, 3 eller 6 måneder</div></div>
+              <div class="checkmark cl"><div class="text">Endelig udelukkelse</div></div>
+            </div>
+  
+            <!-- BUTTON -->
+            <div class="semi-center">
+              <a href="https://rofusweb.spillemyndigheden.dk" class="orange-button button">
+                Registrér dig i ROFUS med nemid
+              </a>
+              <p class="disclaimer">
+                Vær opmærksom på, at Spillemyndigheden tager forbehold for eventuelle tekniske fejl i ROFUS og kan således ikke holdes ansvarlig for dette
+              </p>
+            </div>
           </div>
         </div>
       </div>

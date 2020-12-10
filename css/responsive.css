@@ -3,12 +3,12 @@
   .hide-mobile {
     display: none;
   }
-  .header .container,
+  .header-content .container,
   .wrapper,
   .faq {
     width: 600px;
   }
-  .header,
+  .header-content,
   .part-two,
   .part-two .tile {
     width: 100%;
@@ -33,7 +33,7 @@
     line-height: 20px !important;
   }
   /* KITCHEN SINK */
-  .header .container,
+  .header-content .container,
   .wrapper,
   .faq {
     width: 100%;
@@ -41,31 +41,26 @@
     padding: 0 20px;
     box-sizing: border-box;
   }
-  .header .wrapper,
-  .header .wrapper .container{
+  .header-content .wrapper,
+  .header-content .wrapper .container{
     padding: 0;
     margin: 0;
   }
 
   /* HEADER */
-  .header .container h1 {
+  .header-content .container h1 {
     line-height: 1em;
     margin: 10px 0;
   }
-  .header .container h1,
-  .header .container p,
-  .header .container ul {
+  .header-content .container h1,
+  .header-content .container p,
+  .header-content .container ul {
     width: 100%;
   }
-  .header .checkmark-container {  /* text is not so clear on mobile */
+  .header-content .checkmark-container {  /* text is not so clear on mobile */
     font-weight: 600;
   }
 
-  #video-button {
-    padding-top: 32px;
-    padding-left: 0;
-    text-align: center;
-  }
   .semi-center {
     text-align: center;
   }

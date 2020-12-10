@@ -7,7 +7,7 @@ a,
 a:visited {
   color:#14143c;
 }
-.header .container,
+.container,
 .wrapper,
 .faq {
   margin: 0 auto;
@@ -50,7 +50,7 @@ p,
 .container,
 .footer,
 .button,
-#login {
+.login-container {
   font-family: 'Open Sans', sans-serif;
 }
 .button {
@@ -135,30 +135,42 @@ hr {
   display: table;
   clear: both;
 }
-#login{
+
+.login-container {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 20px;
-  text-align: right;
-  padding-right: 15px;
 }
 
-#login a{
+.login-wrapper {
+  position: absolute;
+  right: 30px;
   background-color: rgb(20,20,60);
-  padding: 10px 45px 10px 20px;
-  border-radius: 50px;
+  border-radius: 20px;
   color: white;
   text-decoration: none;
   font-size: 80%;
   font-weight: 600;
-  right: 30px;
-  top: 20px;
-  background-image: url(../images/digital_signatur_lock.png);
-  background-repeat: no-repeat;
-  background-size: 13px;
-  background-position: 91% 50%;
-  box-shadow:1px 1px 20px black;  
+  box-shadow: 1px 1px 20px black;
+  padding: 40px 20px 10px 20px;
 }
+
+.login-logo {
+  display: block;
+  width: 200px;
+  margin-bottom: 40px;
+}
+
+.login-content {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.login-content__lock {
+  width: 13px;
+}
+
 /***********************\
 |*    MISCELLANEOUS    *|
 \***********************/
