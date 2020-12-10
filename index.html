@@ -22,6 +22,7 @@
     };
   </script>
   <script src="js/cookieconsent.js"></script>
+  <script src="js/loginToggle.js"></script>
   <script src="//assets.adobedtm.com/58ae824d9566/d5694517dc30/launch-7f0ef17de34d.min.js" async></script>
 
   <link href="css/style.css" rel="stylesheet">
@@ -34,7 +35,14 @@
 </head>
 <body>
 
-<div class="login-container">
+<a class="bottomDrawer" target="_blank" href="https://rofusweb.spillemyndigheden.dk">
+  <div class="login-content">
+    <div class="login-content__text">Log på ROFUS med NemID</div>
+    <img class="login-content__lock" src="/images/digital_signatur_lock.png" />
+  </div>
+</a>
+
+<div class="login-container login-container__desktop">
   <a class="login-wrapper" target="_blank" href="https://rofusweb.spillemyndigheden.dk">
     <img src="/images/logo_toggle.png" class="login-logo"/>
     <div class="login-content">
@@ -47,6 +55,16 @@
 <main>
 <!-- HEADER -->
   <div class="header">
+    <div class="login-container login-container__mobile">
+      <a class="login-wrapper" target="_blank" href="https://rofusweb.spillemyndigheden.dk">
+        <img src="/images/logo_toggle.png" class="login-logo"/>
+        <div class="login-content">
+          <div class="login-content__text">Log på ROFUS med NemID</div>
+          <img class="login-content__lock" src="/images/digital_signatur_lock.png" />
+        </div>
+      </a>
+    </div>
+
     <div class="header-bg">
       <div class="background"></div>
       <div class="blackground"></div>

@@ -3,8 +3,16 @@
   width: 100%;
   margin-top: 150px;
   background-color: #5d6673;
-  padding: 5rem 0;
+  padding-top: 5rem;
+  padding-bottom: calc(5rem + 62px);
 }
+
+@media only screen and (min-width: 660px) {
+  .footer {
+    padding-bottom: 5rem;
+  }
+}
+
 .footer .address {
   display: inline-flex;
 }
