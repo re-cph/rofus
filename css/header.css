@@ -210,7 +210,8 @@ a.bottomDrawer,
 
 .login-content__lock {
   width: 13px;
-  height: auto;
+  height: 17.6px;
+  height: calc((233 / 172) * 13px);
 }
 
 @media only screen and (min-width: 660px) {
