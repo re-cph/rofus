@@ -4,14 +4,7 @@ jQuery(function($) {
         if (!element) {
             return;
         }
-        var response = element.get(0).canPlayType('video/webm; codecs="vp9, vorbis"');
-        console.log(
-            response,
-            element.get(0).canPlayType('video/webm; codecs="vp8, vorbis"'),
-            element.get(0).canPlayType('video/webm; codecs="vp9"'),
-            element.get(0).canPlayType('video/webm; codecs="vp8"')
-        );
-        return response === "probably";
+        return element.get(0).canPlayType('video/webm; codecs="vp9"');
     }
 
     function selectVideo(width) {
@@ -42,15 +35,4 @@ jQuery(function($) {
     $(window).resize(handleResize);
 
     handleResize();
-
-    // if (
-    //     navigator.userAgent.toLowerCase().indexOf("safari") > -1 &&
-    //     navigator.userAgent.toLowerCase().indexOf("chrome") < 0
-    // ) {
-    //     var element = $('#video');
-    //     if (!element) {
-    //         return;
-    //     }
-    //     element.get(0).play();
-    // }
 });
