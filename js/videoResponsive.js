@@ -4,7 +4,14 @@ jQuery(function($) {
         if (!element) {
             return;
         }
-        return element.get(0).canPlayType('video/webm; codecs="vp8, vorbis"') === "probably";
+        var response = element.get(0).canPlayType('video/webm; codecs="vp9, vorbis"');
+        console.log(
+            response,
+            element.get(0).canPlayType('video/webm; codecs="vp8, vorbis"'),
+            element.get(0).canPlayType('video/webm; codecs="vp9"'),
+            element.get(0).canPlayType('video/webm; codecs="vp8"')
+        );
+        return response === "probably";
     }
 
     function selectVideo(width) {
