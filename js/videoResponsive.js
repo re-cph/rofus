@@ -28,7 +28,6 @@ jQuery(function($) {
 
         if (element) {
             const videoSrc = selectVideo($(window).width());
-            console.log(videoSrc);
             element.attr('src', videoSrc);
         }
     }
@@ -37,15 +36,14 @@ jQuery(function($) {
 
     handleResize();
 
-    if (
-        navigator.userAgent.toLowerCase().indexOf("safari") > -1 &&
-        navigator.userAgent.toLowerCase().indexOf("chrome") < 0
-    ) {
-        console.log('safari!');
-        var element = $('#video');
-        if (!element) {
-            return;
-        }
-        element.get(0).play();
-    }
+    // if (
+    //     navigator.userAgent.toLowerCase().indexOf("safari") > -1 &&
+    //     navigator.userAgent.toLowerCase().indexOf("chrome") < 0
+    // ) {
+    //     var element = $('#video');
+    //     if (!element) {
+    //         return;
+    //     }
+    //     element.get(0).play();
+    // }
 });
