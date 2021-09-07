@@ -4,7 +4,6 @@ jQuery(function($) {
         if (!element) {
             return;
         }
-        return true;
         return element.get(0).canPlayType('video/webm; codecs="vp8, vorbis"') === "probably";
     }
 
