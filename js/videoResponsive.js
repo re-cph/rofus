@@ -28,7 +28,11 @@ jQuery(function($) {
 
         if (element) {
             const videoSrc = selectVideo($(window).width());
-            element.attr('src', videoSrc);
+            var currentSrc = element.attr('src');
+
+            if (currentSrc !== videoSrc) {
+                element.attr('src', videoSrc);
+            }
         }
     }
     
