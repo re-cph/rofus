@@ -4,7 +4,7 @@ jQuery(function($) {
         if (!element) {
             return;
         }
-        return element.get(0).canPlayType('video/webm; codecs="vp9"');
+        return element.get(0).canPlayType('video/webm; codecs="vp9"') === 'probably';
     }
 
     function selectVideo(width) {
