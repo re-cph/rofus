@@ -37,4 +37,16 @@ jQuery(function($) {
     $(window).resize(handleResize);
 
     handleResize();
+
+    if (
+        navigator.userAgent.toLowerCase().indexOf("safari") > -1 &&
+        navigator.userAgent.toLowerCase().indexOf("chrome") < 0
+    ) {
+        console.log('safari!');
+        var element = $('#video');
+        if (!element) {
+            return;
+        }
+        element.get(0).play();
+    }
 });
