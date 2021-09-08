@@ -10,12 +10,6 @@
   height: 380px;
 }
 
-.tile p {
-  color: white;
-  font-size: 16pt;
-  font-weight: bold;
-}
-
 .tile.test, .tile.app {
   background: #14143c;
 }
@@ -71,4 +65,32 @@
 .tile.smartphone {
   background-image: url(../images/image_app.jpg);
   background-position: 80% 50%
+}
+
+.tile.textOverlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 65%);
+  color: white;
+}
+.tile .textOverlayContent {
+  margin: 0 20px;
+}
+
+@media (min-width: 660px) {
+  .tile .textOverlayContent {
+    width: 440px;
+    margin: 0;
+  }
+}
+.tile .textOverlayContent > :first-child {
+  margin-top: 0;
+}
+.tile .textOverlayContent > :last-child {
+  margin-bottom: 0;
+}
+.tile .textOverlayContent a {
+  color: white;
+  font-weight: bold;
 }
