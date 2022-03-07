@@ -140,7 +140,7 @@
 .header-content .container {
   margin: 0 auto;
 }
-.header-content .container h2,
+.header-content .container h1,
 .header-content .container p {
   width: 480px;
 }
@@ -157,7 +157,7 @@
 .header-content .checkmark-container .checkmark .text {
   margin-left: 28px;
 }
-.header-content h2 {
+.header-content p {
   font-size: 16pt;
   font-weight: bold;
   line-height: 36px;
@@ -181,7 +181,7 @@
 /* LOGO-BUTTON */
 .login-container {
   z-index: 1000;
-  margin-top: -330px;
+  margin-top: -290px;
 }
 @media only screen and (min-width: 660px) {
   .login-container {
