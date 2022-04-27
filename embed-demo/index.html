@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+  <meta charset="UTF-8">
+
+  <style>
+
+    .container {
+      margin: 2rem auto;
+    }
+    
+    @media (min-width: 640px) { 
+      .container {}
+    }
+    /* @media (min-width: 768px) {} */
+    @media (min-width: 1024px) {
+      .container {
+        width: 960px;
+      }      
+    }
+
+    .bg-gray {
+      background-color: lightgray;
+    }
+
+    .bg-white {
+      background-color: white;
+    }
+
+    .p-8 {
+      padding: 2rem;
+    }
+  </style>
+
+</head>
+<body class="bg-gray">
+  <div class="container p-8 bg-white">
+    <spm-rofus language="DA"></spm-rofus>
+    <script type="module">import 'https://rofusdemo.spillemyndigheden.dk/public/webcomponents/spm-rofus.js';</script>
+  </div>
+</body>
+</html>
