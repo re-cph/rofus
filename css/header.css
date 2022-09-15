@@ -128,8 +128,9 @@
 }
 @media (min-width: 660px) {
   .header-content {
-    position: absolute;
-    bottom: 0;
+    display: none;
+    /* position: absolute;
+    bottom: 0; */
   }
 }
 
@@ -183,33 +184,103 @@
   z-index: 1000;
   margin-top: -290px;
 }
+
 @media only screen and (min-width: 660px) {
   .login-container {
     margin-top: 0;
   }
 }
 
+.login-container--mobile {
+  padding: 20px 20px 40px 20px;
+}
+
+.login-container--desktop {
+  padding: 0;
+  /* position: sticky; */
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  border-radius: 22px;
+  
+  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 310px;
+  /* padding-top: 2rem; */
+}
+
+@media only screen and (min-width: 660px) {
+  .login-container--mobile {
+    display: none;
+  }
+  .login-container--desktop {
+    display: flex;
+  }
+}
+
+.login-container-description-wrapper {
+  overflow: hidden;
+  height: 365px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.login-container__description {
+  bottom: 0;
+  padding: 1.5rem 1rem;
+  font-size: 14px;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  height: 365px;
+  box-sizing: border-box;
+}
+
+
+.login-container__button {
+  display: block;
+  text-align: center;
+  margin: 2rem auto 1rem auto;
+  padding: 1rem;
+  background-color: #96b4dc;
+  border-radius: 9999px;
+  text-decoration: none;
+}
+
+.login-container__disclaimer {
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+}
+
 a.bottomDrawer,
 .login-container a {
   color: white;
 }
-.login-container__mobile {
-  padding: 20px 20px 40px 20px;
-}
-.login-container__desktop {
-  padding: 0;
-  position: sticky;
-  top: 20px;
-  display: none;
+
+.login-header {
+  display: block;
+  background-color: rgb(20,20,60);
+  border-radius: 20px 20px 0 0;
+  color: white;
+  text-decoration: none;
+  font-size: 80%;
+  font-weight: 600;
+  width: 310px;
+  box-sizing: border-box;
+  /* box-shadow: 1px 1px 20px black; */
+  padding: 30px 20px 20px 20px;
+  min-height: 120px;
+  margin-top: 2rem;
+  transition: border-radius 1s;
 }
 
-@media only screen and (min-width: 660px) {
-  .login-container__mobile {
-    display: none;
-  }
-  .login-container__desktop {
-    display: block;
-  }
+.login-header--sticky {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  border-radius: 20px;
 }
 
 .login-wrapper {
@@ -223,6 +294,7 @@ a.bottomDrawer,
   box-shadow: 1px 1px 20px black;
   padding: 30px 20px 20px 20px;
 }
+
 
 @media only screen and (min-width: 660px) {
   .login-wrapper {
