@@ -175,3 +175,9 @@ hr {
     transform: translateY(110%);
   }
 }
+
+.spacious-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
