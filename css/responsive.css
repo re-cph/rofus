@@ -26,12 +26,12 @@
   .fl, .fr {
     float: none;
   }
-  p {
+  /* p {
     line-height: 28px !important;
   }
   p.disclaimer {
     line-height: 20px !important;
-  }
+  } */
   /* KITCHEN SINK */
   .header-content .container,
   .wrapper,
@@ -52,11 +52,11 @@
     line-height: 1em;
     margin: 10px 0;
   }
-  .header-content .container h1,
+  /* .header-content .container h1,
   .header-content .container p,
   .header-content .container ul {
     width: 100%;
-  }
+  } */
   .header-content .checkmark-container {  /* text is not so clear on mobile */
     font-weight: 600;
   }

@@ -1,10 +1,10 @@
 jQuery(function($) {
     document.addEventListener('scroll', function(e) {
-        if ($('.login-container__mobile .login-wrapper').first() === undefined) {
-            return
-        }
+      // if ($('.login-container--mobile .login-wrapper').first() === undefined) {
+      //       return
+      //   }
 
-        var elm = $('.login-container__mobile .login-wrapper').first()
+      var elm = $('.login-container').first()
         var top = elm.offset().top;
         var height = elm.outerHeight();
 

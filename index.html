@@ -47,16 +47,6 @@
   </div>
 </a>
 
-<div class="login-container login-container__desktop">
-  <a class="login-wrapper" target="_blank" href="https://rofusweb.spillemyndigheden.dk/public/rofus/">
-    <img src="/images/logo_toggle.png" class="login-logo"/>
-    <div class="login-content">
-      <div class="login-content__text">Log på ROFUS med NemID</div>
-      <img class="login-content__lock" src="/images/digital_signatur_lock.png" />
-    </div>
-  </a>
-</div>
-
 <main>
 <!-- HEADER -->
   <div class="header">
@@ -64,7 +54,7 @@
       <video preload autoplay muted playsinline poster="" id="video"></video>
     </div>
 
-    <div class="login-container login-container__mobile">
+    <!-- <div class="login-container login-container--mobile">
       <a class="login-wrapper" target="_blank" href="https://rofusweb.spillemyndigheden.dk/public/rofus/">
         <img src="/images/logo_toggle.png" class="login-logo"/>
         <div class="login-content">
@@ -72,10 +62,9 @@
           <img class="login-content__lock" src="/images/digital_signatur_lock.png" />
         </div>
       </a>
-    </div>
+    </div> --> 
 
-
-    <div class="header-bg">
+    <!-- <div class="header-bg">
       <div class="background"></div>
       <div class="blackground"></div>
   
@@ -87,22 +76,51 @@
       </div>
   
       <div class="scanlines center"></div>
-    </div>
+    </div> -->
 
     <div class="header-content">
       <div role="region" aria-labelledby="header" class="wrapper">
         <div class="container">
-          <div class="bg-contrast">
+          <div class="login-container"> <!--  login-container--desktop -->
+            <a class="login-header" target="_blank" href="https://rofusweb.spillemyndigheden.dk/public/rofus/">
+              <img src="/images/logo_toggle.png" class="login-logo"/>
+              <div class="login-content">
+                <div class="login-content__text">Log på ROFUS med NemID</div>
+                <img class="login-content__lock" src="/images/digital_signatur_lock.png" />
+              </div>
+            </a>
+
+            <div class="login-container-description-wrapper"><!-- breaking convention, sorry -->
+              <div class="login-container__description">
+                <strong>
+                  I ROFUS kan du frivilligt udelukke dig selv fra onlinespil og fysiske kasinoer i Danmark
+                </strong>
+                <ul class="spacious-list">
+                  <li>Tag en 24 timers spillepause</li>
+                  <li>Midlertidig udelukkelse i 1, 3 eller 6 måneder</li>
+                  <li>Endelig udelukkelse</li>
+                </ul>
+                <a class="login-container__button" href="https://rofusweb.spillemyndigheden.dk/public/rofus/">
+                  Registrér med NemID
+                </a>
+            
+                <p class="login-container__disclaimer">
+                  Vær opmærksom på, at Spillemyndigheden tager forbehold for eventuelle tekniske fejl i ROFUS og kan således ikke holdes ansvarlig for dette
+                </p>
+              </div>
+            </div>
+
+          </div>   
+
+          <!-- <div class="bg-contrast">
             <p>I ROFUS kan du frivilligt udelukke dig selv fra onlinespil og fysiske kasinoer i Danmark.</p>
   
-            <!-- CHECKLIST -->
             <div class="checkmark-container">
               <div class="checkmark cl"><div class="text">Tag en 24 timers spillepause</div></div>
               <div class="checkmark cl"><div class="text">Midlertidig udelukkelse i 1, 3 eller 6 måneder</div></div>
               <div class="checkmark cl"><div class="text">Endelig udelukkelse</div></div>
             </div>
   
-            <!-- BUTTON -->
             <div class="semi-center">
               <a href="https://rofusweb.spillemyndigheden.dk/public/rofus/" class="orange-button button">
                 Registrér dig i ROFUS med nemid
@@ -111,7 +129,7 @@
                 Vær opmærksom på, at Spillemyndigheden tager forbehold for eventuelle tekniske fejl i ROFUS og kan således ikke holdes ansvarlig for dette
               </p>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -248,5 +266,64 @@
 
   
 </main>
+
+<script>
+  var loginContainer    = document.querySelector('.login-container');
+  var loginHeader       = document.querySelector('.login-header');
+  var loginDescWrapper  = document.querySelector('.login-container-description-wrapper');
+  var loginDesc         = document.querySelector('.login-container__description');
+
+  function handleIntersection(entries) {
+    entries.forEach(function(entry) {
+      if (!entry.isIntersecting) {
+        loginHeader.classList.add('login-header--sticky');
+      } else {
+        loginHeader.classList.remove('login-header--sticky');
+      }
+    })
+  }
+
+  var observer = new IntersectionObserver(handleIntersection, {
+    threshold: 1,
+  });
+  
+
+  var initialHeight = loginDescWrapper.clientHeight + 16; // padding
+  loginDesc.style.height = initialHeight + 'px';
+  function slide() {
+    var scrolled = document.documentElement["scrollTop"];
+    var height = initialHeight - ((initialHeight + (32 * 2)) * (scrolled / window.innerHeight));
+    loginDescWrapper.style.height = height + 32 +'px';
+    loginContainer.style.height = 120 + height + 32 + 'px';
+  }
+  
+  var isDesktop = function() {
+    return (window.outerWidth > 660)
+  }
+
+  function initLoginContainer() {
+    observer.unobserve(loginContainer);
+    if (isDesktop()) {
+      observer.observe(loginContainer);
+    } else {
+      loginHeader.classList.remove('login-header--sticky');
+      loginDescWrapper.style.height = 'auto';
+      loginDesc.style.height = 'auto';
+    }
+  }
+
+  window.onscroll = function () {
+    if (isDesktop()) {
+      slide();
+    }
+  };
+
+  window.onresize = function() {
+    initLoginContainer();
+  }
+
+  initLoginContainer();
+  
+</script>
 </body>
 </html>
