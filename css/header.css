@@ -268,7 +268,7 @@ a.bottomDrawer,
   padding: 30px 20px 20px 20px;
   min-height: 120px;
   margin-top: 2rem;
-  transition: border-radius 0.5s;
+  /* transition: border-radius 0.5s; */
 }
 
 @media only screen and (min-width: 660px) {
@@ -281,6 +281,9 @@ a.bottomDrawer,
   position: fixed;
   top: 0;
   z-index: 10;
+}
+
+.login-header--fully-rounded {
   border-radius: 20px;
 }
 

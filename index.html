@@ -293,8 +293,18 @@
   function slide() {
     var scrolled = document.documentElement["scrollTop"];
     var height = initialHeight - ((initialHeight + (32 * 2)) * (scrolled / window.innerHeight));
-    loginDescWrapper.style.height = height + 32 +'px';
-    loginContainer.style.height = 120 + height + 32 + 'px';
+    var loginDescWrapperHeight = height + 32;
+    loginDescWrapper.style.height = loginDescWrapperHeight +'px';
+
+    var loginContainerHeight = 120 + height + 32;
+    loginContainer.style.height = loginContainerHeight + 'px';
+
+    var isSticky = loginHeader.classList.contains('login-header--sticky');
+    if (isSticky || loginDescWrapperHeight < (isSticky ? 120 : 0)) {
+      loginHeader.classList.add('login-header--fully-rounded');
+    } else {
+      loginHeader.classList.remove('login-header--fully-rounded');
+    }
   }
   
   var isDesktop = function() {
