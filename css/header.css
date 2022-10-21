@@ -236,12 +236,6 @@
 
 .login-container__button {
   display: block;
-  text-align: center;
-  margin: 1rem auto;
-  padding: 1rem;
-  background-color: #96b4dc;
-  border-radius: 9999px;
-  text-decoration: none;
 }
 
 .login-container__disclaimer {
