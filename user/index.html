@@ -73,15 +73,17 @@
     </div>
   </footer>
   
-  <!-- <script type="module">import 'https://rofusdemo.spillemyndigheden.dk/public/rofus-test/spm-rofus.js';</script> -->
-  <script type="module">import 'https://rofusdemo.spillemyndigheden.dk/public/webcomponents/spm-rofus.js';</script>
-  <!-- <script type="module">import './spm-rofus_dev.js';</script> -->
+  <script type="module">import 'https://rofusdemo.spillemyndigheden.dk/public/rofus-test/spm-rofus.js';</script>
+  <!-- <script type="module">import 'https://rofusdemo.spillemyndigheden.dk/public/webcomponents/spm-rofus.js';</script> -->
   <!-- <script type="module">import 'http://localhost:8000/dist/src/spm-rofus.js';</script> -->
 
   <script>
     const rofusElm = document.querySelector('spm-rofus');
     
     const machineName = () => {
+      if (rofusElm.errorText) {
+        return 'error';
+      }
       return (rofusElm.getText('field_rofus_cms_machine_name') === 'field_rofus_cms_machine_name') ? '' : rofusElm.getText('field_rofus_cms_machine_name');
     }
     
