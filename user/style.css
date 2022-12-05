@@ -100,7 +100,8 @@ p {
   }
 }
 
-.button {
+.button,
+.button:visited {
   display: inline-flex;
   background-color: var(--color-light);
   padding: 1rem 5rem;
