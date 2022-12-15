@@ -396,6 +396,14 @@ footer {
   padding: 5rem 0;
 }
 
+.footer-section--padding-tiny-top {
+  padding-top: 2rem;
+}
+
+.footer-section--padding-no-bottom {
+  padding-bottom: 0;
+}
+
 .footer-section--light {
   background-color: var(--color-light);
 }
