@@ -520,7 +520,7 @@ footer {
   position: relative;  
 }
 
-.page-content--name--login .formatted-content h2 svg {
+.page-content--name--login .formatted-content h2 button {
   position: absolute;
   right: 0.75rem;
   height: 1.25rem;
@@ -530,17 +530,17 @@ footer {
   opacity: 1;
 }
 
-.page-content--name--login .formatted-content h2 svg.open {
+.page-content--name--login .formatted-content h2 button.open {
   opacity: 0;
   transform: rotate(0.25turn);
 }
 
-.page-content--name--login .formatted-content h2.open svg.open {
+.page-content--name--login .formatted-content h2.open button.open {
   opacity: 1;
   transform: rotate(0.5turn);
 }
 
-.page-content--name--login .formatted-content h2.open svg.closed {
+.page-content--name--login .formatted-content h2.open button.closed {
   opacity: 0;
   transform: rotate(0.25turn);
 }
