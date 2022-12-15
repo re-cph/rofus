@@ -530,6 +530,7 @@ footer {
   border: 0;
   background-color: transparent;
   padding: 0;
+  cursor: pointer;
 }
 
 .page-content--name--login .formatted-content h2 button svg {
