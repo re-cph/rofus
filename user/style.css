@@ -525,9 +525,15 @@ footer {
   right: 0.75rem;
   height: 1.25rem;
   width: 1.25rem;
-  fill: #14143c;
   transition: all 0.5s;
   opacity: 1;
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+}
+
+.page-content--name--login .formatted-content h2 button svg {
+  fill: #14143c;
 }
 
 .page-content--name--login .formatted-content h2 button.open {
