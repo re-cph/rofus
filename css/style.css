@@ -3,6 +3,9 @@ body {
   padding: 0;
   color: #14143c;
 }
+html,body {
+  font-family: 'Open Sans', sans-serif;
+}
 a,
 a:visited {
   color:#14143c;
@@ -38,21 +41,13 @@ h1, h2, h3,
 .headline {
   font-family: 'Noto Sans', sans-serif;
 }
-p {
+p, li {
   line-height: 26px;
 }
-p.disclaimer{
+p.disclaimer {
   font-size: 10pt;
   font-style: italic; 
   line-height: 20px;
-}
-p,
-.container,
-.footer,
-.button,
-.login-container,
-.bottomDrawer {
-  font-family: 'Open Sans', sans-serif;
 }
 
 .button,
