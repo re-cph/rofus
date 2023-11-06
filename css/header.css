@@ -324,3 +324,7 @@ a.bottomDrawer,
     left: auto;
   }
 }
+
+.login-container .login-header {
+  color: white;
+}
