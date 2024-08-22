@@ -1,0 +1,30 @@
+<script type="module">
+  document.addEventListener("scroll", function (e) {
+    const hero = document.querySelector(".login-container");
+    if (!hero) return;
+    const bottomDrawer = document.querySelector(".bottomDrawer");
+    if (!bottomDrawer) return;
+
+    const top = hero.offsetTop;
+    const height = hero.getBoundingClientRect().height;
+
+    const visible = window.scrollY > top + height;
+
+    if (visible) {
+      bottomDrawer.classList.add("bottomDrawer__visible");
+    } else {
+      bottomDrawer.classList.remove("bottomDrawer__visible");
+    }
+  });
+</script>
+
+<a
+  class="bottomDrawer"
+  target="_blank"
+  href="https://rofusweb.spillemyndigheden.dk/public/rofus/"
+>
+  <div class="login-content">
+    <div class="login-content__text">Log på ROFUS med MitID</div>
+    <img class="login-content__lock" src="/images/digital_signatur_lock.png" />
+  </div>
+</a>
