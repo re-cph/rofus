@@ -1,70 +1,86 @@
-<div role="region" aria-labelledby="about-rofus" class="wrapper clearfix">
-  <div class="part-one clearfix">
-    <div class="crown"></div>
-    <h2 id="about-rofus">
+---
+import Button from "./Button.astro";
+import SectionHeader from "./SectionHeader.astro";
+---
+
+<section role="region" aria-labelledby="about-rofus">
+  <div class="container py-12">
+    <SectionHeader id="about-rofus" primary>
       ROFUS er Spille&shy;myndig&shy;hedens register<br />
       over frivilligt udelukkede spillere
-    </h2>
-    <hr class="clearfix cb" />
-    <div class="faq clearfix cb">
-      <div>
-        <div role="region" aria-labelledby="function" class="faq-item fl cl">
-          <h3 id="function">Hvordan virker ROFUS?</h3>
-          <p>
-            Er du registreret i ROFUS, er du udelukket fra onlinespil, alle
-            fysiske kasinoer og fysiske væddemål i butikker i Danmark.
-          </p>
-          <p>Du vælger selv hvor længe.</p>
-        </div>
-        <div role="region" aria-labelledby="confidential" class="faq-item fr">
-          <h3 id="confidential">100% fortroligt</h3>
-          <p>
-            Spille­myndig­heden videregiver ikke oplysninger om din registrering
-            til andre, med mindre du selv forsøger at spille i din
-            udelukkelses­periode, eller hvis en tilladelsesindehaver forsøger at
-            sende direkte markedsføring til dig i din udelukkelsesperiode.
-          </p>
-        </div>
-      </div>
-      <div>
-        <div role="region" aria-labelledby="covered" class="faq-item fl cl">
-          <h3 id="covered">Hvilke spil er omfattet?</h3>
-          <p>
-            Onlinespil med indsats udbudt af spiludbydere med tilladelse fra
-            Spillemyndigheden samt alle fysiske kasinoer og fysiske væddemål i
-            butikker i Danmark.
-          </p>
-          <p>
-            <a href="https://spillemyndigheden.dk/tilladelsesindehavere"
-              ><strong>Se en liste over onlinespiludbydere</strong></a
-            >
-          </p>
-          <p>
-            <a href="https://spillemyndigheden.dk/liste-over-kasinoer-i-danmark"
-              ><strong>Se en liste over fysiske kasinoer</strong></a
-            >
-          </p>
-        </div>
-        <div role="region" aria-labelledby="regret" class="faq-item fr">
-          <h3 id="regret">Hvad hvis jeg fortryder?</h3>
-          <p>
-            Styrken ved ROFUS er, at din registrering ikke kan annulleres
-            &ndash; også selvom du fortryder.
-          </p>
-        </div>
-      </div>
-      <div class="faq-btn cb center">
-        <a
-          href="https://rofusweb.spillemyndigheden.dk/public/rofus/"
-          class="button"
-        >
-          Registrér dig i ROFUS med MitID
-        </a>
-        <p class="disclaimer">
-          Vær opmærksom på, at Spillemyndigheden tager forbehold for eventuelle
-          tekniske fejl i ROFUS og kan således ikke holdes ansvarlig for dette
+    </SectionHeader>
+
+    <ul class="pt-10 md:pt-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
+      <li role="region" aria-labelledby="function" class="leading-relaxed">
+        <h3 id="function" class="text-xl font-bold uppercase my-5">
+          Hvordan virker ROFUS?
+        </h3>
+        <p>
+          Er du registreret i ROFUS, er du udelukket fra onlinespil, alle
+          fysiske kasinoer og fysiske væddemål i butikker i Danmark.
         </p>
-      </div>
+        <p>Du vælger selv hvor længe.</p>
+      </li>
+
+      <li role="region" aria-labelledby="confidential" class="leading-relaxed">
+        <h3 id="confidential" class="text-xl font-bold uppercase my-5">
+          100% fortroligt
+        </h3>
+        <p>
+          Spille­myndig­heden videregiver ikke oplysninger om din registrering
+          til andre, med mindre du selv forsøger at spille i din
+          udelukkelses­periode, eller hvis en tilladelsesindehaver forsøger at
+          sende direkte markedsføring til dig i din udelukkelsesperiode.
+        </p>
+      </li>
+
+      <li
+        role="region"
+        aria-labelledby="covered"
+        class="leading-relaxed space-y-5"
+      >
+        <h3 id="covered" class="text-xl font-bold uppercase my-5">
+          Hvilke spil er omfattet?
+        </h3>
+        <p>
+          Onlinespil med indsats udbudt af spiludbydere med tilladelse fra
+          Spillemyndigheden samt alle fysiske kasinoer og fysiske væddemål i
+          butikker i Danmark.
+        </p>
+        <p>
+          <a href="https://spillemyndigheden.dk/tilladelsesindehavere"
+            ><strong>Se en liste over onlinespiludbydere</strong></a
+          >
+        </p>
+        <p>
+          <a href="https://spillemyndigheden.dk/liste-over-kasinoer-i-danmark"
+            ><strong>Se en liste over fysiske kasinoer</strong></a
+          >
+        </p>
+      </li>
+
+      <li role="region" aria-labelledby="regret" class="leading-relaxed">
+        <h3 id="regret" class="text-xl font-bold uppercase my-5">
+          Hvad hvis jeg fortryder?
+        </h3>
+        <p>
+          Styrken ved ROFUS er, at din registrering ikke kan annulleres &ndash;
+          også selvom du fortryder.
+        </p>
+      </li>
+    </ul>
+
+    <div class="text-center">
+      <Button
+        href="https://rofusweb.spillemyndigheden.dk/public/rofus/"
+        className="my-10"
+      >
+        Registrér dig i ROFUS med MitID
+      </Button>
+      <p class="text-xs italic">
+        Vær opmærksom på, at Spillemyndigheden tager forbehold for eventuelle
+        tekniske fejl i ROFUS og kan således ikke holdes ansvarlig for dette
+      </p>
     </div>
   </div>
-</div>
+</section>

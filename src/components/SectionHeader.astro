@@ -1,0 +1,25 @@
+---
+interface Props {
+  id: string;
+  primary?: boolean;
+}
+
+const { id, primary } = Astro.props;
+
+const sharedClass =
+  "relative py-6 after:h-1 after:w-[120px] after:bg-black after:absolute after:bottom-0";
+
+const fullClass = [
+  primary
+    ? "flex flex-col-reverse gap-y-6"
+    : "flex items-center justify-between",
+  sharedClass,
+].join(" ");
+---
+
+<div class={fullClass}>
+  <h2 id={id} class="text-primary text-2xl font-bold">
+    <slot />
+  </h2>
+  <img src="/images/icon_crown.png" class="w-[46.5px]" />
+</div>

@@ -1,4 +1,6 @@
 ---
+import SectionHeader from "./SectionHeader.astro";
+
 interface NewsItem {
   nid: string;
   title: string;
@@ -13,25 +15,29 @@ const resp = await fetch(
 const data = (await resp.json()) as NewsItem[];
 ---
 
-<div role="region" aria-labelledby="news-header" id="news-bg">
-  <div class="wrapper clearfix">
-    <div class="crown fr"></div>
-    <h2 id="news-header">Nyt om ROFUS fra spillemyndigheden.dk</h2>
-    <hr />
-    <div id="news" class="faq">
+<section role="region" aria-labelledby="news-header" id="news-bg">
+  <div class="container py-12">
+    <SectionHeader id="news-header">
+      Nyt om ROFUS fra spillemyndigheden.dk
+    </SectionHeader>
+
+    <div
+      id="news"
+      class="pt-10 md:pt-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 lg:gap-20"
+    >
       {
         data.map((newsItem, index) => (
           <div
             class={`news-item faq-item node_${newsItem.nid} ${index % 2 === 1 ? "fr" : "cl fl"}`}
           >
-            <h3>{newsItem.title}</h3>
+            <h3 class="uppercase text-lg font-bold">{newsItem.title}</h3>
 
             <p class="date" data-date="'+pubDate+'">
               <em>{newsItem.date}</em>
             </p>
-            <p>{newsItem.text}'</p>
+            <p class="py-4">{newsItem.text}</p>
             <p>
-              <strong>
+              <strong class="underline hover:no-underline">
                 <Fragment set:html={newsItem.link} />
               </strong>
             </p>
@@ -40,4 +46,4 @@ const data = (await resp.json()) as NewsItem[];
       }
     </div>
   </div>
-</div>
+</section>

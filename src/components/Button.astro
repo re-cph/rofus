@@ -1,0 +1,19 @@
+---
+interface Props {
+  href: string;
+  className?: string;
+}
+
+const { href, className } = Astro.props;
+
+const fullClass = [
+  "bg-accent text-primary py-4 px-8 text-sm font-bold text-center inline-block rounded-full no-underline",
+  className,
+]
+  .filter(Boolean)
+  .join(" ");
+---
+
+<a href={href} class={fullClass}>
+  <slot />
+</a>

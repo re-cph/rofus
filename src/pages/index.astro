@@ -1,11 +1,13 @@
 ---
 import BottomDrawer from "../components/BottomDrawer.astro";
+import FloatingLogin from "../components/FloatingLogin.astro";
 import Footer from "../components/Footer.astro";
 import Hero from "../components/Hero.astro";
 import SectionAbout from "../components/SectionAbout.astro";
 import SectionBand from "../components/SectionBand.astro";
 import SectionInfo from "../components/SectionInfo.astro";
 import SectionNews from "../components/SectionNews.astro";
+import "../base.css";
 ---
 
 <!doctype html>
@@ -33,8 +35,6 @@ import SectionNews from "../components/SectionNews.astro";
       is:inline></script>
 
     <link rel="shortcut icon" type="image/png" href="images/icon_crown.png" />
-    <link href="/css/fonts/noto-sans/noto-sans.css" rel="stylesheet" />
-    <link href="/css/fonts/open-sans/open-sans.css" rel="stylesheet" />
 
     <script is:inline>
       window.cookieconsent_options = {
@@ -53,7 +53,6 @@ import SectionNews from "../components/SectionNews.astro";
       async
       is:inline></script>
 
-    <link href="/css/style.css" rel="stylesheet" />
     <link href="/css/faq.css" rel="stylesheet" />
     <link href="/css/news.css" rel="stylesheet" />
     <link href="/css/footer.css" rel="stylesheet" />
@@ -69,6 +68,7 @@ import SectionNews from "../components/SectionNews.astro";
       <SectionBand />
       <SectionAbout />
       <Footer />
+      <FloatingLogin />
       <BottomDrawer />
     </main>
   </body>

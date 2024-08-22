@@ -1,17 +1,33 @@
-<div role="region" aria-labelledby="take-a-test" class="part-two clearfix">
-  <div class="tile test fl">
-    <div class="center">
-      <div class="icon-chip"></div>
-      <h2 id="take-a-test">Spiller du for meget?</h2>
-      <a href="https://www.stopspillet.dk/#test-dig-selv" class="button"
-        >Test dig selv</a
-      >
+---
+import Button from "./Button.astro";
+---
+
+<section
+  role="region"
+  aria-labelledby="take-a-test"
+  class="bg-primary text-white grid grid-rows-2 lg:grid-rows-1 grid-cols-1 lg:grid-cols-2"
+>
+  <div class="flex justify-center items-center h-[380px]">
+    <div class="flex flex-col items-center gap-y-8">
+      <img src="/images/icon_gamble.png" class="w-20" />
+      <h2 id="take-a-test" class="text-2xl font-bold">Spiller du for meget?</h2>
+      <Button href="https://www.stopspillet.dk/#test-dig-selv"
+        >Test dig selv
+      </Button>
     </div>
   </div>
-  <div class="tile poker fl textOverlay">
-    <div class="textOverlayContent">
-      <h3>Få råd og vejledning om ansvarligt spil hos StopSpillet</h3>
-      <p>
+
+  <div class="flex justify-center items-center relative bg-black h-[380px]">
+    <img
+      src="/images/image_gamble.jpg"
+      class="absolute inset-0 w-full h-full object-cover object-[90%_50%] opacity-40"
+    />
+
+    <div class="relative mx-5 md:mx-auto max-w-[440px]">
+      <h3 class="text-xl font-bold uppercase mb-5">
+        Få råd og vejledning om ansvarligt spil hos StopSpillet
+      </h3>
+      <p class="mb-5">
         Ring eller skriv til StopSpillet, Spillemyndighedens hjælpelinje om
         spilafhængighed. Vores rådgivere sidder klar til at tale med dig.
       </p>
@@ -20,4 +36,4 @@
       </p>
     </div>
   </div>
-</div>
+</section>
