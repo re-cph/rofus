@@ -8,6 +8,7 @@ import SectionBand from "../components/SectionBand.astro";
 import SectionInfo from "../components/SectionInfo.astro";
 import SectionNews from "../components/SectionNews.astro";
 import "../base.css";
+import Header from "../components/Header.astro";
 ---
 
 <!doctype html>
@@ -61,14 +62,13 @@ import "../base.css";
     <link href="/css/responsive.css" rel="stylesheet" />
   </head>
   <body>
+    <Header />
     <main>
-      <Hero />
       <SectionInfo />
       <SectionNews />
       <SectionBand />
       <SectionAbout />
       <Footer />
-      <FloatingLogin />
       <BottomDrawer />
     </main>
   </body>

@@ -1,0 +1,49 @@
+---
+import FloatingLogin from "./FloatingLogin.astro";
+import Hero from "./Hero.astro";
+---
+
+<script type="module">
+  const header = document.querySelector("#header");
+  const container = document.querySelector("#floatingLogin");
+
+  const containerHeight = container.getBoundingClientRect().height;
+
+  container.style.marginTop = `-${containerHeight}px`;
+
+  document.addEventListener("scroll", () => {
+    const button = container.querySelector(".floatingLogin-button");
+    const content = container.querySelector(".floatingLogin-content");
+
+    const headerheight = header.getBoundingClientRect().height;
+    const toScroll = headerheight - containerHeight;
+
+    const scrollDiff = toScroll - window.scrollY;
+
+    const roundedCorners =
+      scrollDiff + content.getBoundingClientRect().height <= 0;
+
+    if (roundedCorners) {
+      button.classList.add("rounded-b-3xl");
+    } else {
+      button.classList.remove("rounded-b-3xl");
+    }
+
+    content.style.transform = `translate3d(0, ${Math.min(0, scrollDiff)}px, -1px)`;
+  });
+</script>
+
+<header id="header" class="relative">
+  <Hero />
+  <div class="relative mx-4 bottom-4 -mt-[290px] md:hidden">
+    <FloatingLogin />
+  </div>
+</header>
+<div
+  id="floatingLogin"
+  class="hidden sticky left-8 right-8 top-0 -mt-[0] md:block justify-end py-8 overflow-hidden pointer-events-none z-10"
+>
+  <div class="ml-auto mr-8 w-[310px]">
+    <FloatingLogin />
+  </div>
+</div>

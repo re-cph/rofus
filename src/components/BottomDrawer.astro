@@ -1,8 +1,8 @@
 <script type="module">
   document.addEventListener("scroll", function (e) {
-    const hero = document.querySelector(".login-container");
+    const hero = document.querySelector("#header");
     if (!hero) return;
-    const bottomDrawer = document.querySelector(".bottomDrawer");
+    const bottomDrawer = document.querySelector("#bottomDrawer");
     if (!bottomDrawer) return;
 
     const top = hero.offsetTop;
@@ -11,9 +11,11 @@
     const visible = window.scrollY > top + height;
 
     if (visible) {
-      bottomDrawer.classList.add("bottomDrawer__visible");
+      bottomDrawer.classList.add("translate-y-0");
+      bottomDrawer.classList.remove("translate-y-full");
     } else {
-      bottomDrawer.classList.remove("bottomDrawer__visible");
+      bottomDrawer.classList.remove("translate-y-0");
+      bottomDrawer.classList.add("translate-y-full");
     }
   });
 </script>
@@ -22,10 +24,10 @@
   id="bottomDrawer"
   target="_blank"
   href="https://rofusweb.spillemyndigheden.dk/public/rofus/"
-  class="block fixed inset-0 top-auto bg-primary text-white p-5 no-underline md:hidden shadow-[1px_1px_20px_black]"
+  class="block fixed inset-0 top-auto bg-primary text-white p-5 no-underline md:hidden shadow-[1px_1px_20px_black] translate-y-full transition-transform"
 >
   <div class="flex items-center justify-between">
-    <div class="login-content__text">Log på ROFUS med MitID</div>
-    <img class="login-content__lock" src="/images/digital_signatur_lock.png" />
+    <div>Log på ROFUS med MitID</div>
+    <img class="w-[13px]" src="/images/digital_signatur_lock.png" />
   </div>
 </a>
