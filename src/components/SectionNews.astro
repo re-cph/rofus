@@ -15,7 +15,12 @@ const resp = await fetch(
 const data = (await resp.json()) as NewsItem[];
 ---
 
-<section role="region" aria-labelledby="news-header" id="news-bg">
+<section
+  role="region"
+  aria-labelledby="news-header"
+  id="news-bg"
+  class="bg-bgNews"
+>
   <div class="container py-12">
     <SectionHeader id="news-header">
       Nyt om ROFUS fra spillemyndigheden.dk
@@ -30,9 +35,11 @@ const data = (await resp.json()) as NewsItem[];
           <div
             class={`news-item faq-item node_${newsItem.nid} ${index % 2 === 1 ? "fr" : "cl fl"}`}
           >
-            <h3 class="uppercase text-lg font-bold">{newsItem.title}</h3>
+            <h3 class="uppercase text-lg font-bold leading-tight">
+              {newsItem.title}
+            </h3>
 
-            <p class="date" data-date="'+pubDate+'">
+            <p class="date text-xs pt-3" data-date="'+pubDate+'">
               <em>{newsItem.date}</em>
             </p>
             <p class="py-4">{newsItem.text}</p>
