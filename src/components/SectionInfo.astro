@@ -10,8 +10,10 @@ import SectionHeader from "./SectionHeader.astro";
       over frivilligt udelukkede spillere
     </SectionHeader>
 
-    <ul class="pt-10 md:pt-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20">
-      <li role="region" aria-labelledby="function" class="leading-relaxed">
+    <div
+      class="pt-10 md:pt-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20"
+    >
+      <div role="region" aria-labelledby="function" class="leading-relaxed">
         <h3 id="function" class="text-xl font-bold uppercase my-5">
           Hvordan virker ROFUS?
         </h3>
@@ -20,9 +22,9 @@ import SectionHeader from "./SectionHeader.astro";
           fysiske kasinoer og fysiske væddemål i butikker i Danmark.
         </p>
         <p>Du vælger selv hvor længe.</p>
-      </li>
+      </div>
 
-      <li role="region" aria-labelledby="confidential" class="leading-relaxed">
+      <div role="region" aria-labelledby="confidential" class="leading-relaxed">
         <h3 id="confidential" class="text-xl font-bold uppercase my-5">
           100% fortroligt
         </h3>
@@ -32,9 +34,9 @@ import SectionHeader from "./SectionHeader.astro";
           udelukkelses­periode, eller hvis en tilladelsesindehaver forsøger at
           sende direkte markedsføring til dig i din udelukkelsesperiode.
         </p>
-      </li>
+      </div>
 
-      <li
+      <div
         role="region"
         aria-labelledby="covered"
         class="leading-relaxed space-y-5"
@@ -57,9 +59,9 @@ import SectionHeader from "./SectionHeader.astro";
             ><strong>Se en liste over fysiske kasinoer</strong></a
           >
         </p>
-      </li>
+      </div>
 
-      <li role="region" aria-labelledby="regret" class="leading-relaxed">
+      <div role="region" aria-labelledby="regret" class="leading-relaxed">
         <h3 id="regret" class="text-xl font-bold uppercase my-5">
           Hvad hvis jeg fortryder?
         </h3>
@@ -67,8 +69,8 @@ import SectionHeader from "./SectionHeader.astro";
           Styrken ved ROFUS er, at din registrering ikke kan annulleres &ndash;
           også selvom du fortryder.
         </p>
-      </li>
-    </ul>
+      </div>
+    </div>
 
     <div class="text-center">
       <Button
