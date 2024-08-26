@@ -53,5 +53,5 @@ export default {
       logoSlider: "logoSlider 1s 3s ease-in-out forwards",
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
