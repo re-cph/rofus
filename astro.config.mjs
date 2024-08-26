@@ -4,8 +4,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://www.rofus.nu",
-  base: "rofus",
+  // site: "https://www.rofus.nu",
   integrations: [
     tailwind({
       applyBaseStyles: false,
