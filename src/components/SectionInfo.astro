@@ -1,87 +1,48 @@
 ---
+import { useTranslations } from "../utils";
 import Button from "./Button.astro";
 import SectionHeader from "./SectionHeader.astro";
+import T from "./T.astro";
+
+const t = useTranslations(Astro.currentLocale);
 ---
 
 <section role="region" aria-labelledby="about-rofus">
   <div class="container py-12">
     <SectionHeader id="about-rofus" primary>
-      ROFUS er Spille&shy;myndig&shy;hedens register<br />
-      over frivilligt udelukkede spillere
+      <T path="sectionInfo.title" />
     </SectionHeader>
 
     <div
       class="pt-10 md:pt-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20"
     >
-      <div role="region" aria-labelledby="function" class="leading-relaxed">
-        <h3 id="function" class="text-xl font-bold uppercase my-5">
-          Hvordan virker ROFUS?
-        </h3>
-        <p>
-          Er du registreret i ROFUS, er du udelukket fra onlinespil, alle
-          fysiske kasinoer og fysiske væddemål i butikker i Danmark.
-        </p>
-        <p>Du vælger selv hvor længe.</p>
-      </div>
-
-      <div role="region" aria-labelledby="confidential" class="leading-relaxed">
-        <h3 id="confidential" class="text-xl font-bold uppercase my-5">
-          100% fortroligt
-        </h3>
-        <p>
-          Spille­myndig­heden videregiver ikke oplysninger om din registrering
-          til andre, med mindre du selv forsøger at spille i din
-          udelukkelses­periode, eller hvis en tilladelsesindehaver forsøger at
-          sende direkte markedsføring til dig i din udelukkelsesperiode.
-        </p>
-      </div>
-
-      <div
-        role="region"
-        aria-labelledby="covered"
-        class="leading-relaxed space-y-5"
-      >
-        <h3 id="covered" class="text-xl font-bold uppercase my-5">
-          Hvilke spil er omfattet?
-        </h3>
-        <p>
-          Onlinespil med indsats udbudt af spiludbydere med tilladelse fra
-          Spillemyndigheden samt alle fysiske kasinoer og fysiske væddemål i
-          butikker i Danmark.
-        </p>
-        <p>
-          <a href="https://spillemyndigheden.dk/tilladelsesindehavere"
-            ><strong>Se en liste over onlinespiludbydere</strong></a
+      {
+        ["section1", "section2", "section3", "section4"].map((idx) => (
+          <div
+            role="region"
+            aria-labelledby={t(`sectionInfo.${idx}.ariaLabel` as any)}
+            class="leading-relaxed"
           >
-        </p>
-        <p>
-          <a href="https://spillemyndigheden.dk/liste-over-kasinoer-i-danmark"
-            ><strong>Se en liste over fysiske kasinoer</strong></a
-          >
-        </p>
-      </div>
-
-      <div role="region" aria-labelledby="regret" class="leading-relaxed">
-        <h3 id="regret" class="text-xl font-bold uppercase my-5">
-          Hvad hvis jeg fortryder?
-        </h3>
-        <p>
-          Styrken ved ROFUS er, at din registrering ikke kan annulleres &ndash;
-          også selvom du fortryder.
-        </p>
-      </div>
+            <h3
+              id={t(`sectionInfo.${idx}.ariaLabel` as any)}
+              class="text-xl font-bold uppercase my-5"
+            >
+              <T path={`sectionInfo.${idx}.question` as any} />
+            </h3>
+            <p>
+              <T path={`sectionInfo.${idx}.answer` as any} />
+            </p>
+          </div>
+        ))
+      }
     </div>
 
     <div class="text-center">
-      <Button
-        href="https://rofusweb.spillemyndigheden.dk/public/rofus/"
-        className="my-10"
-      >
-        Registrér dig i ROFUS med MitID
+      <Button href={t("rofusWeb.link")} className="my-10">
+        <T path="sectionInfo.cta" />
       </Button>
       <p class="text-xs italic">
-        Vær opmærksom på, at Spillemyndigheden tager forbehold for eventuelle
-        tekniske fejl i ROFUS og kan således ikke holdes ansvarlig for dette
+        <T path="sectionInfo.notaBene" />
       </p>
     </div>
   </div>

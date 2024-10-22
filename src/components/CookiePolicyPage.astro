@@ -1,0 +1,35 @@
+---
+import "../base.css";
+import { useTranslations } from "../utils";
+const locale = Astro.currentLocale;
+const t = useTranslations(Astro.currentLocale);
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <script
+      id="CookieConsent"
+      src="https://policy.app.cookieinformation.com/uc.js"
+      data-culture={locale?.toUpperCase()}
+      type="text/javascript"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{t("footer.links.cookiePolicy.title")}</title>
+    <style>
+      a,
+      a:hover,
+      a:active,
+      a:visited {
+        color: #13113a;
+      }
+    </style>
+  </head>
+  <body style="background-color: #fff; margin: 0 2rem" class="prose">
+    <script
+      id="CookiePolicy"
+      src="https://policy.app.cookieinformation.com/cid.js"
+      data-culture={locale?.toUpperCase()}></script>
+  </body>
+</html>

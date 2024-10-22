@@ -1,0 +1,62 @@
+---
+import "../base.css";
+import { useTranslations } from "../utils";
+const locale = Astro.currentLocale;
+const t = useTranslations(Astro.currentLocale);
+
+const cookieMessage = t("meta.cookie.message");
+const cookieLearnMore = t("meta.cookie.learnMore");
+const cookieLink = t("meta.cookie.link");
+const cookieDismiss = t("meta.cookie.dismiss");
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2"
+    />
+    <meta name="description" content={t("meta.description")} />
+    <title>{t("meta.title")}</title>
+
+    <script
+      id="CookieConsent"
+      src="https://policy.app.cookieinformation.com/uc.js"
+      data-culture={locale?.toUpperCase()}
+      type="text/javascript"
+      is:inline></script>
+
+    <link rel="shortcut icon" type="image/png" href="images/icon_crown.png" />
+
+    <script
+      define:vars={{
+        cookieMessage,
+        cookieLearnMore,
+        cookieLink,
+        cookieDismiss,
+      }}
+    >
+      window.cookieconsent_options = {
+        message: cookieMessage,
+        learnMore: cookieLearnMore,
+        link: cookieLink,
+        dismiss: cookieDisMiss,
+        theme: "dark-floating",
+        target: "_blank",
+      };
+    </script>
+    <script
+      data-category-consent="cookie_cat_statistic"
+      data-consent-src="//assets.adobedtm.com/58ae824d9566/d5694517dc30/launch-7f0ef17de34d.min.js"
+      async
+      is:inline></script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

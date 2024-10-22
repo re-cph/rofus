@@ -1,0 +1,20 @@
+---
+import { getAbsoluteLocaleUrl } from "astro:i18n";
+import { useTranslations } from "../utils";
+
+const t = useTranslations(Astro.currentLocale);
+
+const languages = [
+  { label: t("language.da"), value: "da" },
+  { label: t("language.kl"), value: "kl" },
+  { label: t("language.en"), value: "en" },
+];
+---
+
+<nav class="flex justify-center gap-x-5">
+  {
+    languages.map((language) => (
+      <a href={getAbsoluteLocaleUrl(language.value, "")}>{language.label}</a>
+    ))
+  }
+</nav>

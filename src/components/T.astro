@@ -1,0 +1,13 @@
+---
+import type { defaultLocale, locales } from "../locales";
+import { useTranslations } from "../utils";
+
+interface Props {
+  path: keyof (typeof locales)[typeof defaultLocale];
+}
+
+const t = useTranslations(Astro.currentLocale);
+const { path } = Astro.props;
+---
+
+<Fragment set:html={t(path)} />

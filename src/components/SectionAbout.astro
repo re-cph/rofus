@@ -1,10 +1,15 @@
 ---
+import { useTranslations } from "../utils";
 import SectionHeader from "./SectionHeader.astro";
+import T from "./T.astro";
+const t = useTranslations(Astro.currentLocale);
 ---
 
 <section role="region" aria-labelledby="info-on-rofus">
   <div class="container py-12">
-    <SectionHeader id="info-on-rofus">Værd at vide om ROFUS</SectionHeader>
+    <SectionHeader id="info-on-rofus">
+      <T path="sectionAbout.title" />
+    </SectionHeader>
 
     <div
       class="pt-10 md:pt-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 lg:gap-20"
@@ -12,52 +17,38 @@ import SectionHeader from "./SectionHeader.astro";
       <div>
         <div
           role="region"
-          aria-labelledby="register"
+          aria-labelledby={t("sectionAbout.section1.ariaLabel")}
           class="leading-relaxed space-y-5"
         >
-          <h3 id="register" class="text-xl font-bold uppercase my-5">
-            Registrering i ROFUS sker med MitID
+          <h3
+            id={t("sectionAbout.section1.ariaLabel")}
+            class="text-xl font-bold uppercase my-5"
+          >
+            <T path="sectionAbout.section1.title" />
           </h3>
           <p>
-            Hvis du ikke har MitID, kan du registrere dig i ROFUS ved at udfylde
-            og sende
-            <a
-              href="https://www.spillemyndigheden.dk/uploads/2018-11/9-01%20rofus%20-%20udelukkelse%20fra%20spil.pdf"
-              target="_blank">blanket nr. 9-01 (PDF åbner i nyt vindue)</a
-            >
-            via Spillemyndighedens
-            <a href="https://spillemyndigheden.dk/kontakt" target="_blank"
-              >kontaktformular</a
-            >
-            eller til:
+            <T path="sectionAbout.section1.content" />
           </p>
-          <p></p>
           <p>
-            Spillemyndigheden<br />
-            Englandsgade 25, 6. sal<br />
-            5000 Odense C
+            <T path="spm.name" /><br />
+            <T path="spm.address" /><br />
+            <T path="spm.city" />
           </p>
         </div>
 
         <div
           role="region"
-          aria-labelledby="contact-info"
+          aria-labelledby={t("sectionAbout.section2.ariaLabel")}
           class="leading-relaxed space-y-5"
         >
-          <h3 id="contact-info" class="text-xl font-bold uppercase my-5">
-            Ring eller skriv til ROFUS
+          <h3
+            id={t("sectionAbout.section2.ariaLabel")}
+            class="text-xl font-bold uppercase my-5"
+          >
+            <T path="sectionAbout.section2.title" />
           </h3>
           <p>
-            Skriv til ROFUS via Spillemyndighedens
-            <a href="https://spillemyndigheden.dk/kontakt" target="_blank"
-              >kontaktformular</a
-            >
-            eller ring på <b><a href="tel:+4572386020">72 38 60 20</a></b>
-          </p>
-          <p>
-            <b>Telefoniske åbningstider</b><br />
-            Mandag - torsdag 9:00-15:00<br />
-            Fredag 9:00-14:00
+            <T path="sectionAbout.section2.content" />
           </p>
         </div>
       </div>
@@ -65,44 +56,26 @@ import SectionHeader from "./SectionHeader.astro";
       <div>
         <div
           role="region"
-          aria-labelledby="access"
+          aria-labelledby={t("sectionAbout.section3.ariaLabel")}
           class="leading-relaxed space-y-5"
         >
-          <h3 id="access" class="text-xl font-bold uppercase my-5">
-            Hvem har adgang til min registrering i ROFUS?
+          <h3
+            id={t("sectionAbout.section3.ariaLabel")}
+            class="text-xl font-bold uppercase my-5"
+          >
+            <T path="sectionAbout.section3.title" />
           </h3>
           <p>
-            Når du er registreret i ROFUS, er din registrering fortrolig.
-            Spillemyndigheden videregiver ikke oplysninger om din registrering
-            til andre.
-          </p>
-          <p>
-            Kasinoer, spilselskaber og butikker får dog adgang til oplysninger
-            om din registrering i følgende tilfælde:
+            <T path="sectionAbout.section3.content" />
           </p>
           <ul class="list-disc pl-8">
-            <li>
-              Hvis du forsøger at logge dig på din spilkonto eller at oprette en
-              ny spilkonto, vil spilselskabet se, om du er registreret i ROFUS.
-            </li>
-            <li>
-              Hvis du forsøger at komme ind på et fysisk kasino, vil kasinoet
-              kunne se, om du er registreret i ROFUS.
-            </li>
-            <li>
-              Hvis du forsøger at købe fysiske væddemål i butikker i Danmark,
-              vil udbyderen kunne se, om du er registreret i ROFUS, hvis du har
-              registreret dig den 1. oktober 2023 eller derefter.
-            </li>
-            <li>
-              Når du registrerer dig i ROFUS bliver du samtidig tilmeldt ”Nej
-              tak til spilreklamer”, så spilselskaberne kan se din registrering,
-              inden de udsender reklamer.
-            </li>
+            <li><T path="sectionAbout.section3.list1" /></li>
+            <li><T path="sectionAbout.section3.list2" /></li>
+            <li><T path="sectionAbout.section3.list3" /></li>
+            <li><T path="sectionAbout.section3.list4" /></li>
           </ul>
           <p>
-            Kun i disse situationer har spilselskaberne, butikkerne og/eller
-            kasinoerne mulighed for at se din registrering.
+            <T path="sectionAbout.section3.notaBene" />
           </p>
         </div>
       </div>

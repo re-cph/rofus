@@ -10,4 +10,11 @@ export default defineConfig({
       applyBaseStyles: false,
     }),
   ],
+  i18n: {
+    locales: ["da", "kl", "en"],
+    defaultLocale: "da",
+    routing: {
+      prefixDefaultLocale: false,
+    },
+  },
 });
