@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="da" trgLang="kl">
+  <file id="rofus">
+    <unit id="meta.title">
+      <segment>
+        <source>ROFUS - Register Over Frivilligt Udelukkede Spillere</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="meta.description">
+      <segment>
+        <source>Registrér dig i ROFUS med MitID og udeluk dig selv fra alt pengespil online og på
+          fysiske kasinoer.</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="meta.cookie.header">
+      <segment>
+        <source>Brug af
+          cookies</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="meta.cookie.message">
+      <segment>
+        <source>På rofus.nu
+          bruger vi cookies til at samle statistik, så vi kan forbedre din oplevelse på sitet. Du
+          accepterer, når du klikker dig videre.</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit
+      id="meta.cookie.learnMore">
+      <segment>
+        <source>Læs mere</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="meta.cookie.link">
+      <segment>
+        <source>https://www.spillemyndigheden.dk/om-cookies-pa-rofusnu</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="meta.cookie.dismiss">
+      <segment>
+        <source>OK</source>
+        <target></target>
+      </segment>
+    </unit>
+
+    <unit id="rofusWeb.link">
+      <segment>
+        <source>https://rofusweb.spillemyndigheden.dk/public/rofus/</source>
+        <target></target>
+      </segment>
+    </unit>
+
+    <unit id="floatingLogin.title">
+      <segment>
+        <source>Log på ROFUS med MitID</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="floatingLogin.excerpt">
+      <segment>
+        <source>I ROFUS kan du
+          frivilligt udelukke dig selv fra onlinespil, fysiske kasinoer og væddemål i fysiske
+          butikker i Danmark.</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit
+      id="floatingLogin.list1">
+      <segment>
+        <source>Tag en 24 timers spillepause</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="floatingLogin.list2">
+      <segment>
+        <source>Midlertidig udelukkelse i 1, 3 eller 6 måneder</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="floatingLogin.list3">
+      <segment>
+        <source>Endelig udelukkelse</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="floatingLogin.cta">
+      <segment>
+        <source>Registrér med MitID</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="floatingLogin.notaBene">
+      <segment>
+        <source>Vær opmærksom
+          på, at Spillemyndigheden tager forbehold for eventuelle tekniske fejl i ROFUS og kan
+          således
+          ikke holdes ansvarlig for dette</source>
+        <target></target>
+      </segment>
+    </unit>
+
+    <unit id="sectionInfo.title">
+      <segment>
+        <source>ROFUS er Spillemyndighedens register\n over frivilligt udelukkede spillere</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit
+      id="sectionInfo.section1.ariaLabel">
+      <segment>
+        <source>function</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="sectionInfo.section1.question">
+      <segment>
+        <source>Hvordan virker ROFUS?</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="sectionInfo.section1.answer">
+      <segment>
+        <source>Er du registreret i ROFUS, er du udelukket fra onlinespil, alle fysiske kasinoer og
+          fysiske væddemål i butikker i Danmark.\n Du vælger selv hvor længe.</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="sectionInfo.section2.ariaLabel">
+      <segment>
+        <source>confidential</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="sectionInfo.section2.question">
+      <segment>
+        <source>100% fortroligt</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="sectionInfo.section2.answer">
+      <segment>
+        <source>Spillemyndigheden videregiver ikke oplysninger om din registrering til andre, med
+          mindre du
+          selv forsøger at spille i din udelukkelsesperiode, eller hvis en tilladelsesindehaver
+          forsøger
+          at sende direkte markedsføring til dig i din udelukkelsesperiode.</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="sectionInfo.section3.question">
+      <segment>
+        <source>Hvilke spil er omfattet?</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="sectionInfo.section3.answer">
+      <segment>
+        <source>Onlinespil med indsats udbudt af spiludbydere med tilladelse fra Spillemyndigheden
+          samt alle fysiske kasinoer og fysiske væddemål i butikker i Danmark.\n \n Se en
+          liste over onlinespiludbydere \n \n Se en liste over fysiske kasinoer
+        </source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="sectionInfo.section4.question">
+      <segment>
+        <source>Hvad hvis jeg fortryder?</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="sectionInfo.section4.answer">
+      <segment>
+        <source>Styrken ved ROFUS er, at din registrering ikke kan
+          annulleres - også selvom du fortryder.</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit
+      id="sectionInfo.cta">
+      <segment>
+        <source>Registrér dig i ROFUS med MitID</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="sectionInfo.notaBene">
+      <segment>
+        <source>Vær opmærksom på, at Spillemyndigheden tager forbehold for
+          eventuelle tekniske fejl i ROFUS og kan således ikke holdes ansvarlig for dette</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit
+      id="sectionAbout.title">
+      <segment>
+        <source>Værd at vide om ROFUS</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="sectionAbout.section1.ariaLabel">
+      <segment>
+        <source>register</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="sectionAbout.section1.title">
+      <segment>
+        <source>Registrering i ROFUS sker med MitID</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="sectionAbout.section1.content">
+      <segment>
+        <source>Hvis du ikke har MitID, kan du registrere dig i ROFUS ved at udfylde og sende
+          blanket
+          nr. 9-01 (PDF åbner i nyt vindue) via Spillemyndighedens kontaktformular
+          til:</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="sectionAbout.section2.title">
+      <segment>
+        <source>Ring eller skriv til ROFUS</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="sectionAbout.section2.content">
+      <segment>
+        <source>Skriv til ROFUS via Spillemyndighedens kontaktformular eller ring på 72 38 60 20
+          \n\n
+          Telefoniske
+          åbningstider\n Mandag - torsdag 9:00-15:00\n Fredag 9:00-14:00</source>
+        <target></target>
+      </segment>
+    </unit>
+
+    <unit id="sectionAbout.section3.title">
+      <segment>
+        <source>Hvem har
+          adgang til min registrering i ROFUS?</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit
+      id="sectionAbout.section3.content">
+      <segment>
+        <source>Når du er registreret i ROFUS, er din registrering fortrolig. Spillemyndigheden
+          videregiver ikke oplysninger om din registrering til andre.\n
+          \n Kasinoer,
+          spilselskaber og butikker får dog adgang til oplysninger om din registrering i følgende
+          tilfælde:</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit
+      id="sectionAbout.section3.list1">
+      <segment>
+        <source>Hvis du forsøger at logge dig på din spilkonto eller at
+          oprette en ny spilkonto, vil spilselskabet se, om du er registreret i ROFUS.</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit
+      id="sectionAbout.section3.list2">
+      <segment>
+        <source>Hvis du forsøger at komme ind på et fysisk kasino, vil
+          kasinoet kunne se, om du er registreret i ROFUS.</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit
+      id="sectionAbout.section3.list3">
+      <segment>
+        <source>Hvis du forsøger at købe fysiske væddemål i butikker i
+          Danmark, vil udbyderen kunne se, om du er registreret i ROFUS, hvis du har registreret dig
+          den
+          1. oktober 2023 eller derefter.</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit
+      id="sectionAbout.section3.list4">
+      <segment>
+        <source>Når du registrerer dig i ROFUS bliver du samtidig tilmeldt
+          ”Nej tak til spilreklamer”, så spilselskaberne kan se din registrering, inden de udsender
+          reklamer.</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="sectionAbout.section3.notaBene">
+      <segment>
+        <source>Kun i disse situationer har spilselskaberne, butikkerne
+          og/eller kasinoerne mulighed for at se din registrering.</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="footer.links.availabilityStatement.title">
+      <segment>
+        <source>Tilgængelighedserklæring</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="footer.links.availabilityStatement.link">
+      <segment>
+        <source>
+          https://www.was.digst.dk/rofus-nu</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit
+      id="footer.links.privacyPolicy.title">
+      <segment>
+        <source>Privatlivspolitik</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="footer.links.privacyPolicy.link">
+      <segment>
+        <source>https://www.spillemyndigheden.dk/privatlivspolitik-rofus</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="footer.links.cookiePolicy.title">
+      <segment>
+        <source>Cookiepolitik</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="spm.name">
+      <segment>
+        <source>Spillemyndigheden</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="spm.address">
+      <segment>
+        <source>Englandsgade 25, 6. sal</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="spm.city">
+      <segment>
+        <source>5000 Odense C</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="spm.email">
+      <segment>
+        <source>mail@spillemyndigheden.dk</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="spm.cvr">
+      <segment>
+        <source>CVR 34730415</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="language.da">
+      <segment>
+        <source>Dansk</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="language.kl">
+      <segment>
+        <source>Grønlandsk</source>
+        <target></target>
+      </segment>
+    </unit>
+    <unit id="language.en">
+      <segment>
+        <source>Engelsk</source>
+        <target></target>
+      </segment>
+    </unit>
+  </file>
+</xliff>
