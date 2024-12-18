@@ -80,28 +80,35 @@
 
   <script>
     const rofusElm = document.querySelector('spm-rofus');
-    
+
     const machineName = () => {
       if (rofusElm.errorText) {
         return 'error';
       }
       return (rofusElm.getText('field_rofus_cms_machine_name') === 'field_rofus_cms_machine_name') ? '' : rofusElm.getText('field_rofus_cms_machine_name');
     }
-    
+
     let lastLoadedPage = '';
-    rofusElm.addEventListener('DOMSubtreeModified', () => {
-      if (lastLoadedPage !== machineName()) {
-        lastLoadedPage = machineName();
-        setTimeout(() => {
-          handlePageChange(lastLoadedPage);
-        }, 0);
+    const callback = (mutationList) => {
+      for (const mutation of mutationList) {
+        if (mutation.type === "childList") {
+          if (lastLoadedPage !== machineName()) {
+            lastLoadedPage = machineName();
+            setTimeout(() => {
+              handlePageChange(lastLoadedPage);
+            }, 0);
+          }
+        }
       }
-    });
+    };
 
-    const iconClosed = `<svg class="icon closed" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11 11v-11h1v11h11v1h-11v11h-1v-11h-11v-1h11z"/></svg>`;
-    const iconOpen = `<svg class="icon open" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 12v1h23v-1h-23z"/></svg>`;
+    const observer = new MutationObserver(callback);
+    observer.observe(rofusElm, { childList: true });
 
-    const handlePageChange = name =>  {
+    const iconClosed = `<button type="button" aria-label="expand" class="icon closed"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11 11v-11h1v11h11v1h-11v11h-1v-11h-11v-1h11z"/></svg></button>`;
+    const iconOpen = `<button type="button" aria-label="collapse" class="icon open"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 12v1h23v-1h-23z"/></svg></button>`;
+
+    const handlePageChange = name => {
       switch (name) {
         case 'login':
           rofusElm.querySelectorAll('h2').forEach(elm => {
@@ -117,8 +124,8 @@
             });
           });
           break;
-          
-          default:
+
+        default:
           break;
       }
     }
