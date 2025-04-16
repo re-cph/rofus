@@ -50,7 +50,7 @@ export default {
     },
     animation: {
       heroBgScale: "heroBgScale 4s linear forwards",
-      logoSlider: "logoSlider 1s 3s ease-in-out forwards",
+      logoSlider: "logoSlider 1s 13s ease-in-out forwards",
     },
   },
   plugins: [require("@tailwindcss/typography")],
