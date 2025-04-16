@@ -10,7 +10,7 @@ interface NewsItem {
 }
 
 const resp = await fetch(
-  "https://www.spillemyndigheden.dk/json/rofus?_format=json",
+  "https://www.spillemyndigheden.dk/json/rofus/news?_format=json",
 );
 const data = (await resp.json()) as NewsItem[];
 ---
@@ -45,7 +45,7 @@ const data = (await resp.json()) as NewsItem[];
             <p class="py-4">{newsItem.text}</p>
             <p>
               <strong class="underline hover:no-underline">
-                <Fragment set:html={newsItem.link} />
+                <a href={newsItem.link} target="_blank">Læs mere</a>
               </strong>
             </p>
           </div>
