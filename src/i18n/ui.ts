@@ -58,6 +58,21 @@ export const ui = {
       "Ring eller skriv til StopSpillet, Spillemyndighedens hjælpelinje om spilafhængighed. Vores rådgivere sidder klar til at tale med dig.",
     "sectionBand.link.text": "Læs mere på StopSpillet.dk",
     "sectionBand.link.href": "https://www.stopspillet.dk",
+    "sectionAbout.title": "Værd at vide om ROFUS",
+    "sectionAbout.section1.title": "Registrering i ROFUS sker med MitID",
+    "sectionAbout.section1.text":
+      "Hvis du ikke har MitID, kan du registrere dig i ROFUS ved at udfylde og sende",
+    "sectionAbout.section1.link.text":
+      "blanket nr. 9-01 (PDF åbner i nyt vindue)",
+    "sectionAbout.section1.link.href":
+      "https://www.spillemyndigheden.dk/uploads/2018-11/9-01%20rofus%20-%20udelukkelse%20fra%20spil.pdf",
+    "sectionAbout.section1.link2.text": "kontaktformular",
+    "sectionAbout.section1.link2.href":
+      "https://www.spillemyndigheden.dk/kontakt",
+    "sectionAbout.section1.text3": "via Spillemyndighedens",
+    "sectionAbout.section1.text4": "eller til:",
+    "sectionAbout.section1.text5":
+      "Spillemyndigheden\nEnglandsgade 25, 6. sal\n5000 Odense C",
   },
   kl: {
     "floatingLogin.tagline": "Ding dong",
