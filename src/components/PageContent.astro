@@ -1,0 +1,25 @@
+---
+import BottomDrawer from "../components/BottomDrawer.astro";
+import FloatingLogin from "../components/FloatingLogin.astro";
+import Footer from "../components/Footer.astro";
+import Hero from "../components/Hero.astro";
+import SectionAbout from "../components/SectionAbout.astro";
+import SectionBand from "../components/SectionBand.astro";
+import SectionInfo from "../components/SectionInfo.astro";
+import SectionNews from "../components/SectionNews.astro";
+import "../base.css";
+import Header from "../components/Header.astro";
+import Layout from "../layout.astro";
+---
+
+<Layout>
+  <Header />
+  <main>
+    <SectionInfo />
+    <SectionNews />
+    <SectionBand />
+    <SectionAbout />
+    <Footer />
+    <BottomDrawer />
+  </main>
+</Layout>

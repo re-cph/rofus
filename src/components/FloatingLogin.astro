@@ -1,12 +1,19 @@
 ---
 import Button from "./Button.astro";
+import { getLangFromUrl } from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+import {
+  getSecret,
+ } from 'astro:env/server';
+
+const rofusLink = `https://rofus${getSecret("ENVIRONMENT") === "staging" ? "demo" : "web"}.spillemyndigheden.dk/public/rofus?language=${lang}`;
 ---
 
 <div class="floatingLogin overflow-hidden pointer-events-auto rounded-3xl">
   <a
-    class="floatingLogin-button block bg-primary text-white px-5 pt-8 pb-5 no-underline rounded-t-3xl relative z-50 transition-all"
+    class="floatingLogin-button block bg-primary text-white px-5 pt-8 pb-5 no-underline rounded-t-3xl relative z-20 transition-all"
     target="_blank"
-    href="https://rofusweb.spillemyndigheden.dk/public/rofus/"
+    href={rofusLink}
   >
     <img src="/images/logo_toggle.png" class="w-[200px] mb-5" alt="" />
     <div class="flex justify-between items-center">
@@ -29,7 +36,7 @@ import Button from "./Button.astro";
       </ul>
 
       <Button
-        href="https://rofusweb.spillemyndigheden.dk/public/rofus/"
+        href={rofusLink}
         className="my-5 w-full"
       >
         Registrér med MitID

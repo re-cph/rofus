@@ -1,0 +1,51 @@
+---
+import { getLangFromUrl } from "./i18n/utils";
+---
+
+<!doctype html>
+<html lang={getLangFromUrl(Astro.url)}>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2"
+    />
+    <meta
+      name="description"
+      content="Registrér dig i ROFUS med MitID og udeluk dig selv fra alt pengespil online og på fysiske kasinoer."
+    />
+    <title>ROFUS - Register Over Frivilligt Udelukkede Spillere</title>
+
+    <script
+      id="CookieConsent"
+      src="https://policy.app.cookieinformation.com/uc.js"
+      data-culture="DA"
+      type="text/javascript"
+      is:inline></script>
+
+    <link rel="shortcut icon" type="image/png" href="images/icon_crown.png" />
+
+    <script is:inline>
+      window.cookieconsent_options = {
+        message:
+          "<h4>Brug af cookies</h4>\nPå rofus.nu bruger vi cookies til at samle statistik, så vi kan forbedre din oplevelse på sitet. Du accepterer, når du klikker dig videre. ",
+        learnMore: "L&aelig;s mere",
+        link: "https://www.spillemyndigheden.dk/om-cookies-pa-rofusnu",
+        dismiss: "OK",
+        theme: "dark-floating",
+        target: "_blank",
+      };
+    </script>
+    <script
+      data-category-consent="cookie_cat_statistic"
+      data-consent-src="//assets.adobedtm.com/58ae824d9566/d5694517dc30/launch-7f0ef17de34d.min.js"
+      async
+      is:inline></script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
