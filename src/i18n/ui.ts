@@ -46,6 +46,8 @@ export const ui = {
     "sectionInfo.cta": "Registrér dig i ROFUS med MitID",
     "sectionInfo.notaBene":
       "Vær opmærksom på, at Spillemyndigheden tager forbehold for eventuelle tekniske fejl i ROFUS og kan således ikke holdes ansvarlig for dette",
+    "sectionNews.title": "Nyt om ROFUS fra spillemyndigheden.dk",
+    "sectionNews.readMore": "Læs mere",
   },
   kl: {
     "floatingLogin.tagline": "Ding dong",
