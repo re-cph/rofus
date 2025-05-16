@@ -5,12 +5,13 @@ const lang = getLangFromUrl(Astro.url);
 ---
 
 <div
-  class="absolute z-30 top-0 right-0 w-full p-4 md:p-0 md:w-[133px] md:mr-8 md:mt-8"
+  class="absolute z-30 top-0 right-0 w-full p-4 md:p-0 md:w-[130px] md:mr-8 md:mt-8"
 >
   <button
     type="button"
     class="peer w-full text-left rounded-3xl px-5 py-3 bg-white/30 hover:bg-white focus:bg-white focus:rounded-b-none text-sm font-medium flex gap-2 justify-between items-center"
     onclick="document.querySelector('.lang-list').classList.toggle('hidden')"
+    onblur="setTimeout(() => document.querySelector('.lang-list').classList.add('hidden'), 10)"
   >
     <img src={`/images/flag_${lang}.png`} class="h-4 w-auto" alt="" />
     <span class="flex-auto">{languages[lang]}</span>
