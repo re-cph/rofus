@@ -10,7 +10,7 @@ const lang = getLangFromUrl(Astro.url);
   <button
     type="button"
     class="peer w-full text-left rounded-3xl px-5 py-3 bg-white/30 hover:bg-white focus:bg-white focus:rounded-b-none text-sm font-medium flex gap-2 justify-between items-center"
-    onclick="document.querySelector('.lang-list').classList.toggle('hidden')"
+    onfocus="document.querySelector('.lang-list').classList.toggle('hidden')"
     onblur="setTimeout(() => document.querySelector('.lang-list').classList.add('hidden'), 10)"
   >
     <img src={`/images/flag_${lang}.png`} class="h-4 w-auto" alt="" />
