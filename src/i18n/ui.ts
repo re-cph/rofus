@@ -48,6 +48,16 @@ export const ui = {
       "Vær opmærksom på, at Spillemyndigheden tager forbehold for eventuelle tekniske fejl i ROFUS og kan således ikke holdes ansvarlig for dette",
     "sectionNews.title": "Nyt om ROFUS fra spillemyndigheden.dk",
     "sectionNews.readMore": "Læs mere",
+    "sectionBand.button": "Test dig selv",
+    "sectionBand.title": "Spiller du for meget?",
+    "sectionBand.title2":
+      "Få råd og vejledning om ansvarligt spil hos StopSpillet",
+    "sectionBand.button.href": "https://www.stopspillet.dk/#test-dig-selv",
+    "sectionBand.button.text": "Test dig selv",
+    "sectionBand.text":
+      "Ring eller skriv til StopSpillet, Spillemyndighedens hjælpelinje om spilafhængighed. Vores rådgivere sidder klar til at tale med dig.",
+    "sectionBand.link.text": "Læs mere på StopSpillet.dk",
+    "sectionBand.link.href": "https://www.stopspillet.dk",
   },
   kl: {
     "floatingLogin.tagline": "Ding dong",
