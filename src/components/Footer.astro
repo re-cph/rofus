@@ -25,13 +25,13 @@ const t = useTranslations(lang);
       class="flex flex-col lg:flex-row gap-x-6 justify-center items-center leading-relaxed"
     >
       <a href="https://www.was.digst.dk/rofus-nu" target="_blank"
-        ></a
+        >{t("footer.links.availabilityStatement.title")}</a
       >
       <a
         href="https://www.spillemyndigheden.dk/privatlivspolitik-rofus"
-        target="_blank">{t("footer.item7")}</a
+        target="_blank">{t("footer.links.privacyPolicy.title")}</a
       >
-      <a href={lang === defaultLang ? `/cookie-policy` : `/${lang}/cookie-policy`}>{t("footer.item8")}</a>
+      <a href={lang === defaultLang ? `/cookie-policy` : `/${lang}/cookie-policy`}>{t("footer.links.cookiePolicy.title")}</a>
     </div>
   </div>
 </footer>

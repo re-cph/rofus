@@ -1,8 +1,6 @@
 ---
 import BottomDrawer from "../components/BottomDrawer.astro";
-import FloatingLogin from "../components/FloatingLogin.astro";
 import Footer from "../components/Footer.astro";
-import Hero from "../components/Hero.astro";
 import SectionAbout from "../components/SectionAbout.astro";
 import SectionBand from "../components/SectionBand.astro";
 import SectionInfo from "../components/SectionInfo.astro";
@@ -10,14 +8,16 @@ import SectionNews from "../components/SectionNews.astro";
 import "../base.css";
 import Header from "../components/Header.astro";
 import Layout from "../layout.astro";
+import { defaultLang } from "../i18n/ui";
+import { getLangFromUrl } from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
 ---
 
 <Layout>
   <Header />
   <main>
     <SectionInfo />
-    <SectionNews />
-    <SectionBand />
+    {lang === defaultLang && <><SectionNews /><SectionBand /></>}
     <SectionAbout />
     <Footer />
     <BottomDrawer />

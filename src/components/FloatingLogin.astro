@@ -19,7 +19,7 @@ export const rofusLink = (lang: string) => `https://rofus${getSecret("ENVIRONMEN
   >
     <img src="/images/logo_toggle.png" class="w-[200px] mb-5" alt="" />
     <div class="flex justify-between items-center">
-      <div class="text-xs font-semibold">{t("floatingLogin.tagline")}</div>
+      <div class="text-xs font-semibold">{t("floatingLogin.title")}</div>
       <img class="w-[13px]" src="/images/digital_signatur_lock.png" alt="" />
     </div>
   </a>
@@ -27,7 +27,7 @@ export const rofusLink = (lang: string) => `https://rofus${getSecret("ENVIRONMEN
   <div class="floatingLogin-content origin-[top_left_-1px]">
     <div class="px-4 py-6 bg-white text-sm rounded-b-3xl">
       <strong>
-        {t("floatingLogin.title")}
+        {t("floatingLogin.excerpt")}
       </strong>
 
       <ul class="list-disc space-y-2 pl-10 my-4">
@@ -40,7 +40,7 @@ export const rofusLink = (lang: string) => `https://rofus${getSecret("ENVIRONMEN
         href={rofusLink(lang)}
         className="my-5 w-full"
       >
-        {t("floatingLogin.button")}
+        {t("floatingLogin.cta")}
       </Button>
 
       <p class="text-xs text-center leading-relaxed">
