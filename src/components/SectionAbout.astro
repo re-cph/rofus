@@ -49,19 +49,20 @@ const t = useTranslations(lang);
           class="leading-relaxed space-y-5"
         >
           <h3 id="contact-info" class="text-xl font-bold uppercase my-5">
-            Ring eller skriv til ROFUS
+            {t("sectionAbout.section1.text6")}
           </h3>
           <p>
-            Skriv til ROFUS via Spillemyndighedens
-            <a href="https://spillemyndigheden.dk/kontakt" target="_blank"
-              >kontaktformular</a
+            {t("sectionAbout.section1.text7")}
+            <a href={t("sectionAbout.section1.text7.href")} target="_blank"
+              >{t("sectionAbout.section1.text7.text")}</a
             >
-            eller ring på <b><a href="tel:+4572386020">72 38 60 20</a></b>
+            {t("sectionAbout.section1.text8")} <strong><a href={t("sectionAbout.section1.phone.href")}>{t("sectionAbout.section1.phone.text")}</a></strong>
           </p>
           <p>
-            <b>Telefoniske åbningstider</b><br />
-            Mandag - torsdag 9:00-15:00<br />
-            Fredag 9:00-14:00
+            <b>{t("sectionAbout.section1.text9")}</b><br />
+            {t("sectionAbout.section1.text10").split("\n").map((line: string) => (
+              <span class="block">{line}</span>
+            ))}
           </p>
         </div>
       </div>
@@ -73,40 +74,30 @@ const t = useTranslations(lang);
           class="leading-relaxed space-y-5"
         >
           <h3 id="access" class="text-xl font-bold uppercase my-5">
-            Hvem har adgang til min registrering i ROFUS?
+            {t("sectionAbout.section2.title")}
           </h3>
           <p>
-            Når du er registreret i ROFUS, er din registrering fortrolig.
-            Spillemyndigheden videregiver ikke oplysninger om din registrering
-            til andre.
+            {t("sectionAbout.section2.text1")}
           </p>
           <p>
-            Kasinoer, spilselskaber og butikker får dog adgang til oplysninger
-            om din registrering i følgende tilfælde:
+            {t("sectionAbout.section2.text2")}
           </p>
           <ul class="list-disc pl-8">
             <li>
-              Hvis du forsøger at logge dig på din spilkonto eller at oprette en
-              ny spilkonto, vil spilselskabet se, om du er registreret i ROFUS.
+              {t("sectionAbout.section2.list1")}
             </li>
             <li>
-              Hvis du forsøger at komme ind på et fysisk kasino, vil kasinoet
-              kunne se, om du er registreret i ROFUS.
+              {t("sectionAbout.section2.list2")}
             </li>
             <li>
-              Hvis du forsøger at købe fysiske væddemål i butikker i Danmark,
-              vil udbyderen kunne se, om du er registreret i ROFUS, hvis du har
-              registreret dig den 1. oktober 2023 eller derefter.
+              {t("sectionAbout.section2.list3")}
             </li>
             <li>
-              Når du registrerer dig i ROFUS bliver du samtidig tilmeldt ”Nej
-              tak til spilreklamer”, så spilselskaberne kan se din registrering,
-              inden de udsender reklamer.
+              {t("sectionAbout.section2.list4")}
             </li>
           </ul>
           <p>
-            Kun i disse situationer har spilselskaberne, butikkerne og/eller
-            kasinoerne mulighed for at se din registrering.
+            {t("sectionAbout.section2.text3")}
           </p>
         </div>
       </div>

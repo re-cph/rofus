@@ -73,6 +73,33 @@ export const ui = {
     "sectionAbout.section1.text4": "eller til:",
     "sectionAbout.section1.text5":
       "Spillemyndigheden\nEnglandsgade 25, 6. sal\n5000 Odense C",
+    "sectionAbout.section1.text6": "Ring eller skriv til ROFUS",
+    "sectionAbout.section1.text7": "Skriv til ROFUS via Spillemyndighedens",
+    "sectionAbout.section1.text7.text": "kontaktformular",
+    "sectionAbout.section1.text7.href":
+      "https://www.spillemyndigheden.dk/kontakt",
+    "sectionAbout.section1.text8": "eller ring på",
+    "sectionAbout.section1.phone.text": "72 38 60 20",
+    "sectionAbout.section1.phone.href": "tel:+4572386020",
+    "sectionAbout.section1.text9": "Telefoniske åbningstider",
+    "sectionAbout.section1.text10":
+      "Mandag - torsdag 9:00-15:00\nFredag 9:00-14:00",
+    "sectionAbout.section2.title":
+      "Hvem har adgang til min registrering i ROFUS?",
+    "sectionAbout.section2.text1":
+      "Når du er registreret i ROFUS, er din registrering fortrolig. Spillemyndigheden videregiver ikke oplysninger om din registrering til andre.",
+    "sectionAbout.section2.text2":
+      "Kasinoer, spilselskaber og butikker får dog adgang til oplysninger om din registrering i følgende tilfælde:",
+    "sectionAbout.section2.list1":
+      "Hvis du forsøger at logge dig på din spilkonto eller at oprette en ny spilkonto, vil spilselskabet se, om du er registreret i ROFUS.",
+    "sectionAbout.section2.list2":
+      "Hvis du forsøger at komme ind på et fysisk kasino, vil kasinoet kunne se, om du er registreret i ROFUS.",
+    "sectionAbout.section2.list3":
+      "Hvis du forsøger at købe fysiske væddemål i butikker i Danmark,vil udbyderen kunne se, om du er registreret i ROFUS, hvis du har registreret dig den 1. oktober 2023 eller derefter.",
+    "sectionAbout.section2.list4":
+      "Når du registrerer dig i ROFUS bliver du samtidig tilmeldt ”Nej tak til spilreklamer”, så spilselskaberne kan se din registrering, inden de udsender reklamer.",
+    "sectionAbout.section2.text3":
+      "Kun i disse situationer har spilselskaberne, butikkerne og/eller kasinoerne mulighed for at se din registrering.",
   },
   kl: {
     "floatingLogin.tagline": "Ding dong",
