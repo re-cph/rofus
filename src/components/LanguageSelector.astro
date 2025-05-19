@@ -1,6 +1,7 @@
 ---
 import { languages } from "../i18n/ui";
 import { getLangFromUrl } from "../i18n/utils";
+import { defaultLang } from "../i18n/ui";
 const lang = getLangFromUrl(Astro.url);
 ---
 
@@ -28,7 +29,7 @@ const lang = getLangFromUrl(Astro.url);
           .filter(([langCode]) => langCode !== lang)
           .map(([langCode, name]) => (
             <a
-              href={langCode === "da" ? `/` : `/${langCode}/`}
+              href={langCode === defaultLang ? `/` : `/${langCode}/`}
               class="no-underline rounded hover:bg-black/10 px-2 py-2 flex gap-2 justify-between items-center"
             >
               <img

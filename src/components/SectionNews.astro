@@ -1,6 +1,7 @@
 ---
 import SectionHeader from "./SectionHeader.astro";
 import { getLangFromUrl, useTranslations } from "../i18n/utils";
+import { defaultLang } from "../i18n/ui";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 interface NewsItem {
@@ -12,7 +13,7 @@ interface NewsItem {
 }
 
 const resp = await fetch(
-  `https://www.spillemyndigheden.dk/${lang === "da" ? "" : `${lang}/`}json/rofus/news?_format=json`,
+  `https://www.spillemyndigheden.dk/${lang === defaultLang ? "" : `${lang}/`}json/rofus/news?_format=json`,
 );
 const data = (await resp.json()) as NewsItem[];
 ---
