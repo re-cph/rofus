@@ -112,5 +112,5 @@ export const translationKL: TranslationType = {
   "footer.links.availabilityStatement.title": "Atuisinnaanermut uppernarsaat",
   "footer.links.privacyPolicy.title": "Inuttut inuunermut politikki",
   "footer.links.cookiePolicy.title": "Cookie-nut politikki",
-  "bottomDrawer.text": "",
+  "bottomDrawer.text": "MitID atorlugu ROFUS-imut iserit",
 };
