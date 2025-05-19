@@ -110,7 +110,13 @@ export const translationKL: TranslationType = {
   "footer.item4": "mail@spillemyndigheden.dk",
   "footer.item5": "CVR: 34730415",
   "footer.links.availabilityStatement.title": "Atuisinnaanermut uppernarsaat",
+  "footer.links.availabilityStatement.href":
+    "https://www.was.digst.dk/rofus-nu",
   "footer.links.privacyPolicy.title": "Inuttut inuunermut politikki",
+  "footer.links.privacyPolicy.href":
+    "https://www.spillemyndigheden.dk/privatlivspolitik-rofus",
   "footer.links.cookiePolicy.title": "Cookie-nut politikki",
+  "footer.links.cookiePolicy.href":
+    "https://spillemyndigheden.dk/cookie-policy",
   "bottomDrawer.text": "MitID atorlugu ROFUS-imut iserit",
 };

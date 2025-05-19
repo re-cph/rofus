@@ -103,8 +103,14 @@ export const translationDA = {
   "footer.item3": "5000 Odense C",
   "footer.item4": "mail@spillemyndigheden.dk",
   "footer.item5": "CVR: 34730415",
-  "footer.links.availabilityStatement.title": "Atuisinnaanermut uppernarsaat",
-  "footer.links.privacyPolicy.title": "Inuttut inuunermut politikki",
-  "footer.links.cookiePolicy.title": "Cookie-nut politikki",
+  "footer.links.availabilityStatement.title": "Tilgængelighedserklæring",
+  "footer.links.availabilityStatement.href":
+    "https://www.was.digst.dk/rofus-nu",
+  "footer.links.privacyPolicy.title": "Privatlivspolitik",
+  "footer.links.privacyPolicy.href":
+    "https://www.spillemyndigheden.dk/privatlivspolitik-rofus",
+  "footer.links.cookiePolicy.title": "Cookiepolitik",
+  "footer.links.cookiePolicy.href":
+    "https://www.spillemyndigheden.dk/cookiepolitik",
   "bottomDrawer.text": "Log på ROFUS med MitID",
 };

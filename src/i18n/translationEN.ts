@@ -99,7 +99,13 @@ export const translationEN = {
   "footer.item4": "mail@spillemyndigheden.dk",
   "footer.item5": "CVR: 34730415",
   "footer.links.availabilityStatement.title": "Declaration of accessibility",
+  "footer.links.availabilityStatement.href":
+    "https://www.was.digst.dk/rofus-nu",
   "footer.links.privacyPolicy.title": "Privacy Policy",
+  "footer.links.privacyPolicy.href":
+    "https://www.spillemyndigheden.dk/en/privacy-policy-rofus",
   "footer.links.cookiePolicy.title": "Cookie Policy",
+  "footer.links.cookiePolicy.href":
+    "https://www.spillemyndigheden.dk/en/cookie-policy",
   "bottomDrawer.text": "Log on at ROFUS using MitID",
 };

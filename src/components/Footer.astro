@@ -24,14 +24,14 @@ const t = useTranslations(lang);
     <div
       class="flex flex-col lg:flex-row gap-x-6 justify-center items-center leading-relaxed"
     >
-      <a href="https://www.was.digst.dk/rofus-nu" target="_blank"
+      <a href={(t("footer.links.availabilityStatement.href"))} target="_blank"
         >{t("footer.links.availabilityStatement.title")}</a
       >
       <a
-        href="https://www.spillemyndigheden.dk/privatlivspolitik-rofus"
+        href={(t("footer.links.privacyPolicy.href"))}
         target="_blank">{t("footer.links.privacyPolicy.title")}</a
       >
-      <a href={lang === defaultLang ? `/cookie-policy` : `/${lang}/cookie-policy`}>{t("footer.links.cookiePolicy.title")}</a>
+      <a href={(t("footer.links.cookiePolicy.href"))} target="_blank">{t("footer.links.cookiePolicy.title")}</a>
     </div>
   </div>
 </footer>
