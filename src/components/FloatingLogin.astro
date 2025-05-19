@@ -8,14 +8,14 @@ import {
 
 const t = useTranslations(lang);
 
-const rofusLink = `https://rofus${getSecret("ENVIRONMENT") === "staging" ? "demo" : "web"}.spillemyndigheden.dk/public/rofus?language=${lang}`;
+export const rofusLink = (lang: string) => `https://rofus${getSecret("ENVIRONMENT") === "staging" ? "demo" : "web"}.spillemyndigheden.dk/public/rofus?language=${lang}`;
 ---
 
 <div class="floatingLogin overflow-hidden pointer-events-auto rounded-3xl">
   <a
     class="floatingLogin-button block bg-primary text-white px-5 pt-8 pb-5 no-underline rounded-t-3xl relative z-20 transition-all"
     target="_blank"
-    href={rofusLink}
+    href={rofusLink(lang)}
   >
     <img src="/images/logo_toggle.png" class="w-[200px] mb-5" alt="" />
     <div class="flex justify-between items-center">
@@ -37,7 +37,7 @@ const rofusLink = `https://rofus${getSecret("ENVIRONMENT") === "staging" ? "demo
       </ul>
 
       <Button
-        href={rofusLink}
+        href={rofusLink(lang)}
         className="my-5 w-full"
       >
         {t("floatingLogin.button")}
