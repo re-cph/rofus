@@ -5,21 +5,17 @@ import { defaultLang } from "../i18n/ui";
 const lang = getLangFromUrl(Astro.url);
 ---
 
-<div
-  class="absolute z-30 top-0 right-0 w-[130px] mr-8 mt-8"
->
+<div class="absolute z-30 top-0 right-0 w-[130px] mr-8 mt-8">
   <button
-    type="button"
-    class="peer w-full text-left rounded-3xl px-5 py-3 bg-white/30 hover:bg-white focus:bg-white focus:rounded-b-none text-sm font-medium flex gap-2 justify-between items-center"
-    onfocus="document.querySelector('.lang-list').classList.toggle('hidden')"
-    onblur="setTimeout(() => document.querySelector('.lang-list').classList.add('hidden'), 10)"
+    class="peer w-full text-left rounded-3xl px-5 py-3 bg-white/30 hover:bg-white data-[open=true]:bg-white data-[open=true]:rounded-b-none text-sm font-medium flex gap-2 justify-between items-center"
+    onclick="this.dataset.open = this.dataset.open === 'true' ? 'false' : 'true'"
   >
     <img src={`/images/flag_${lang}.png`} class="h-4 w-auto" alt="" />
     <span class="flex-auto">{languages[lang]}</span>
     <i class="fa-solid fa-chevron-down"></i>
   </button>
   <div
-    class="lang-list hidden absolute z-30 left-0 origin-top-left w-full"
+    class="peer-data-[open=true]:block hidden absolute z-30 left-0 origin-top-left w-full"
   >
     <div
       class="px-3 pb-2 bg-white rounded-b-3xl text-sm font-medium flex flex-col md:gap-1 w-full"
