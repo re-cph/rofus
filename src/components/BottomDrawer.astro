@@ -5,7 +5,7 @@ const t = useTranslations(lang);
 import { rofusLink } from "./FloatingLogin.astro";
 ---
 
-<script type="module">
+<script is:inline type="module">
   document.addEventListener("scroll", function (e) {
     const hero = document.querySelector("#header");
     if (!hero) return;
