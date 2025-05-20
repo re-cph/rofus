@@ -2,7 +2,7 @@ export const translationEN = {
   "meta.title": "ROFUS – Register of Self-Excluded Players",
   "meta.description":
     "Register with ROFUS using your MitID and exclude yourself from all online gambling and onsite gambling in land-based casinos.",
-  "meta.cookie.header": "Use of cookies",
+  "meta.cookie.header": "...Use of cookies",
   "meta.cookie.message":
     "At rofus.nu, we use cookies to collect statistics so that we can improve your experience of our website. You accept our use of cookies when you click to proceed.",
   "meta.cookie.learnMore": "Read more",
