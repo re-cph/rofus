@@ -6,7 +6,9 @@ const lang = getLangFromUrl(Astro.url);
 ---
 
 <div class="absolute z-30 top-0 right-0 w-[130px] mr-8 mt-8">
+  
   <button
+    id="language-selector-button"
     class="peer w-full text-left rounded-3xl px-5 py-3 bg-white/30 hover:bg-white data-[open=true]:bg-white data-[open=true]:rounded-b-none text-sm font-medium flex gap-2 justify-between items-center"
     onclick="this.dataset.open = this.dataset.open === 'true' ? 'false' : 'true'"
   >
@@ -39,4 +41,7 @@ const lang = getLangFromUrl(Astro.url);
       }
     </div>
   </div>
+  <div
+    onclick="document.getElementById('language-selector-button').dataset.open = 'false'"
+    class="fixed inset-0 w-screen h-screen z-20 peer-data-[open=true]:block hidden"></div>
 </div>
