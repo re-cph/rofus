@@ -61,7 +61,8 @@ export const translationEN = {
   "sectionAbout.section1.link.text": "form no. 9-01 (PDF opens in new window)",
   "sectionAbout.section1.link.href": "",
   "sectionAbout.section1.link2.text": "contact form",
-  "sectionAbout.section1.link2.href": "",
+  "sectionAbout.section1.link2.href":
+    "https://www.spillemyndigheden.dk/en/contact",
   "sectionAbout.section1.text3": "via the Danish Gambling Authority’s",
   "sectionAbout.section1.text4": "or to:",
   "sectionAbout.section1.text5":
@@ -70,8 +71,10 @@ export const translationEN = {
   "sectionAbout.section2.content":
     "Write to ROFUS via the Danish Gambling Authority’s",
   "sectionAbout.section2.text2.text": "contact form",
-  "sectionAbout.section2.text2.href": "",
+  "sectionAbout.section2.text2.href":
+    "https://www.spillemyndigheden.dk/en/contact",
   "sectionAbout.section2.text3": "or call us on tel.",
+  "sectionAbout.section2.text3.1": "",
   "sectionAbout.section2.text4": "Telephone opening hours",
   "sectionAbout.section2.phone.text": "72 38 60 20",
   "sectionAbout.section2.phone.href": "tel:+4572386020",

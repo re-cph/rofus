@@ -79,6 +79,7 @@ export const translationDA = {
   "sectionAbout.section2.text3": "eller ring på",
   "sectionAbout.section2.phone.text": "72 38 60 20",
   "sectionAbout.section2.phone.href": "tel:+4572386020",
+  "sectionAbout.section2.text3.1": "",
   "sectionAbout.section2.text4": "Telefoniske åbningstider",
   "sectionAbout.section2.text5":
     "Mandag - torsdag 9:00-15:00\nFredag 9:00-14:00",

@@ -74,6 +74,7 @@ export const translationKL: TranslationType = {
     "https://www.spillemyndigheden.dk/kontakt",
   "sectionAbout.section2.text3": "atorlugu ROFUS-imut allagit imaluunniit",
   "sectionAbout.section2.phone.text": "72 38 60 20",
+  "sectionAbout.section2.text3.1": "(taamaallaat qallunaatut)",
   "sectionAbout.section2.phone.href": "tel:+4572386020",
   "sectionAbout.section2.text4": "nOqarasuaatikkut ammasarfiit",
   "sectionAbout.section2.text5":
