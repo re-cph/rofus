@@ -74,7 +74,7 @@ export const translationEN = {
   "sectionAbout.section2.text2.href":
     "https://www.spillemyndigheden.dk/en/contact",
   "sectionAbout.section2.text3": "or call us on tel.",
-  "sectionAbout.section2.text3.1": "",
+  "sectionAbout.section2.text3.1": "(only in Danish)",
   "sectionAbout.section2.text4": "Telephone opening hours",
   "sectionAbout.section2.phone.text": "72 38 60 20",
   "sectionAbout.section2.phone.href": "tel:+4572386020",
