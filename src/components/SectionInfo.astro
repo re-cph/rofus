@@ -1,73 +1,70 @@
 ---
 import Button from "./Button.astro";
 import SectionHeader from "./SectionHeader.astro";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <section role="region" aria-labelledby="about-rofus">
   <div class="container py-12">
     <SectionHeader id="about-rofus" primary>
-      ROFUS er Spille&shy;myndig&shy;hedens register<br />
-      over frivilligt udelukkede spillere
+      {t("sectionInfo.title").split("\n").map((line: string) => (
+        <span class="block">{line}</span>
+      ))}
     </SectionHeader>
 
     <div
       class="pt-10 md:pt-16 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20"
     >
-      <div role="region" aria-labelledby="function" class="leading-relaxed">
+      <div role="region" aria-labelledby={t("sectionInfo.section1.ariaLabel")} class="leading-relaxed">
         <h3 id="function" class="text-xl font-bold uppercase my-5">
-          Hvordan virker ROFUS?
+          {t("sectionInfo.section1.question")}
         </h3>
-        <p>
-          Er du registreret i ROFUS, er du udelukket fra onlinespil, alle
-          fysiske kasinoer og fysiske væddemål i butikker i Danmark.
-        </p>
-        <p>Du vælger selv hvor længe.</p>
+
+        {t("sectionInfo.section1.answer").split("\n").map((line: string) => (
+          <p>{line}</p>
+        ))}
       </div>
 
-      <div role="region" aria-labelledby="confidential" class="leading-relaxed">
+      <div role="region" aria-labelledby={t("sectionInfo.section2.ariaLabel")} class="leading-relaxed">
         <h3 id="confidential" class="text-xl font-bold uppercase my-5">
-          100% fortroligt
+          {t("sectionInfo.section2.question")}
         </h3>
         <p>
-          Spille­myndig­heden videregiver ikke oplysninger om din registrering
-          til andre, med mindre du selv forsøger at spille i din
-          udelukkelses­periode, eller hvis en tilladelsesindehaver forsøger at
-          sende direkte markedsføring til dig i din udelukkelsesperiode.
+          {t("sectionInfo.section2.answer")}
         </p>
       </div>
 
       <div
         role="region"
-        aria-labelledby="covered"
+        aria-labelledby={t("sectionInfo.section3.ariaLabel")}
         class="leading-relaxed space-y-5"
       >
         <h3 id="covered" class="text-xl font-bold uppercase my-5">
-          Hvilke spil er omfattet?
+          {t("sectionInfo.section3.question")}
         </h3>
         <p>
-          Onlinespil med indsats udbudt af spiludbydere med tilladelse fra
-          Spillemyndigheden samt alle fysiske kasinoer og fysiske væddemål i
-          butikker i Danmark.
+          {t("sectionInfo.section3.answer")}
         </p>
         <p>
-          <a href="https://spillemyndigheden.dk/tilladelsesindehavere"
-            ><strong>Se en liste over onlinespiludbydere</strong></a
+          <a href={t("sectionInfo.section3.link1.href")}
+            ><strong>{t("sectionInfo.section3.link1.text")}</strong></a
           >
         </p>
         <p>
-          <a href="https://spillemyndigheden.dk/liste-over-kasinoer-i-danmark"
-            ><strong>Se en liste over fysiske kasinoer</strong></a
+          <a href={t("sectionInfo.section3.link2.href")}
+            ><strong>{t("sectionInfo.section3.link2.text")}</strong></a
           >
         </p>
       </div>
 
-      <div role="region" aria-labelledby="regret" class="leading-relaxed">
+      <div role="region" aria-labelledby={t("sectionInfo.section4.ariaLabel")} class="leading-relaxed">
         <h3 id="regret" class="text-xl font-bold uppercase my-5">
-          Hvad hvis jeg fortryder?
+          {t("sectionInfo.section4.question")}
         </h3>
         <p>
-          Styrken ved ROFUS er, at din registrering ikke kan annulleres &ndash;
-          også selvom du fortryder.
+          {t("sectionInfo.section4.answer")}
         </p>
       </div>
     </div>
@@ -77,11 +74,10 @@ import SectionHeader from "./SectionHeader.astro";
         href="https://rofusweb.spillemyndigheden.dk/public/rofus/"
         className="my-10"
       >
-        Registrér dig i ROFUS med MitID
+        {t("sectionInfo.cta")}
       </Button>
       <p class="text-xs italic">
-        Vær opmærksom på, at Spillemyndigheden tager forbehold for eventuelle
-        tekniske fejl i ROFUS og kan således ikke holdes ansvarlig for dette
+        {t("sectionInfo.notaBene")}
       </p>
     </div>
   </div>

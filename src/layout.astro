@@ -1,0 +1,49 @@
+---
+import { getLangFromUrl } from "./i18n/utils";
+import { useTranslations } from "./i18n/utils";
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2"
+    />
+    <meta name="description" content={t("meta.description")} />
+    <title>{t("meta.title")}</title>
+
+    <script
+      id="CookieConsent"
+      src="https://policy.app.cookieinformation.com/uc.js"
+      data-culture={lang.toUpperCase()}
+      type="text/javascript"
+      is:inline></script>
+
+    <link rel="shortcut icon" type="image/png" href="images/icon_crown.png" />
+
+    <script is:inline>
+      window.cookieconsent_options = {
+        message: `<h4>${t("meta.cookie.header")}</h4>${t("meta.cookie.message")}`,
+        learnMore: t("meta.cookie.learnMore"),
+        link: t("meta.cookie.link"),
+        dismiss: t("meta.cookie.dismiss"),
+        theme: "dark-floating",
+        target: "_blank",
+      };
+    </script>
+    <script
+      data-category-consent="cookie_cat_statistic"
+      data-consent-src="//assets.adobedtm.com/58ae824d9566/d5694517dc30/launch-7f0ef17de34d.min.js"
+      async
+      is:inline></script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

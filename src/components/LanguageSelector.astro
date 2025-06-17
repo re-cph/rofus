@@ -1,0 +1,47 @@
+---
+import { languages } from "../i18n/ui";
+import { getLangFromUrl } from "../i18n/utils";
+import { defaultLang } from "../i18n/ui";
+const lang = getLangFromUrl(Astro.url);
+---
+
+<div class="absolute z-30 top-0 right-0 w-[130px] mr-8 mt-8">
+  
+  <button
+    id="language-selector-button"
+    class="peer w-full text-left rounded-3xl px-5 py-3 bg-white/30 hover:bg-white data-[open=true]:bg-white data-[open=true]:rounded-b-none text-sm font-medium flex gap-2 justify-between items-center"
+    onclick="this.dataset.open = this.dataset.open === 'true' ? 'false' : 'true'"
+  >
+    <img src={`/images/flag_${lang}.png`} class="h-4 w-auto" alt="" />
+    <span class="flex-auto">{languages[lang]}</span>
+    <i class="fa-solid fa-chevron-down"></i>
+  </button>
+  <div
+    class="peer-data-[open=true]:block hidden absolute z-30 left-0 origin-top-left w-full"
+  >
+    <div
+      class="px-3 pb-2 bg-white rounded-b-3xl text-sm font-medium flex flex-col md:gap-1 w-full"
+    >
+      {
+        Object.entries(languages)
+          .filter(([langCode]) => langCode !== lang)
+          .map(([langCode, name]) => (
+            <a
+              href={langCode === defaultLang ? `/` : `/${langCode}/`}
+              class="no-underline rounded hover:bg-black/10 px-2 py-2 flex gap-2 justify-between items-center"
+            >
+              <img
+                src={`/images/flag_${langCode}.png`}
+                class="h-4 w-auto"
+                alt={name}
+              />
+              <span class="flex-auto">{name}</span>
+            </a>
+          ))
+      }
+    </div>
+  </div>
+  <div
+    onclick="document.getElementById('language-selector-button').dataset.open = 'false'"
+    class="fixed inset-0 w-screen h-screen z-20 peer-data-[open=true]:block hidden"></div>
+</div>
