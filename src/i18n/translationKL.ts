@@ -66,7 +66,7 @@ export const translationKL: TranslationType = {
   "sectionAbout.section1.text3": "attaveqarnissamut",
   "sectionAbout.section1.text4": "immersugassaq atorlugu uuga:",
   "sectionAbout.section1.text5":
-    "Spillemyndigheden\nEnglandsgade 25, 6. sal\n5000 Odense C",
+    "Spillemyndigheden\nLerchesgade 35, 6. sal\n5000 Odense C",
   "sectionAbout.section2.title": "ROFUS-imut sianerit imaluunniit allagit",
   "sectionAbout.section2.content": "Spillemyndigheden-imut",
   "sectionAbout.section2.text2.text": "attaveqarnissamut immersugassaq",
