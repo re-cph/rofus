@@ -70,7 +70,7 @@ export const translationDA = {
   "sectionAbout.section1.text3": "via Spillemyndighedens",
   "sectionAbout.section1.text4": "eller til:",
   "sectionAbout.section1.text5":
-    "Spillemyndigheden\nEnglandsgade 25, 6. sal\n5000 Odense C",
+    "Spillemyndigheden\nLerchesgade 35, 6. sal\n5000 Odense C",
   "sectionAbout.section2.title": "Ring eller skriv til ROFUS",
   "sectionAbout.section2.content": "Skriv til ROFUS via Spillemyndighedens",
   "sectionAbout.section2.text2.text": "kontaktformular",
