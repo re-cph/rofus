@@ -66,7 +66,7 @@ export const translationEN = {
   "sectionAbout.section1.text3": "via the Danish Gambling Authority’s",
   "sectionAbout.section1.text4": "or to:",
   "sectionAbout.section1.text5":
-    "Spillemyndigheden\nEnglandsgade 25, 6. sal\n5000 Odense C",
+    "Spillemyndigheden\nLerchesgade 35, 6. sal\n5000 Odense C",
   "sectionAbout.section2.title": "Call or write to ROFUS",
   "sectionAbout.section2.content":
     "Write to ROFUS via the Danish Gambling Authority’s",
