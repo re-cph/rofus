@@ -70,7 +70,7 @@ export const translationDA = {
   "sectionAbout.section1.text3": "via Spillemyndighedens",
   "sectionAbout.section1.text4": "eller til:",
   "sectionAbout.section1.text5":
-    "Spillemyndigheden\nLerchesgade 35, 6. sal\n5000 Odense C",
+    "Spillemyndigheden\nLerchesgade 35, 2\n5000 Odense C",
   "sectionAbout.section2.title": "Ring eller skriv til ROFUS",
   "sectionAbout.section2.content": "Skriv til ROFUS via Spillemyndighedens",
   "sectionAbout.section2.text2.text": "kontaktformular",
@@ -100,7 +100,7 @@ export const translationDA = {
   "sectionAbout.section3.notaBene":
     "Kun i disse situationer har spilselskaberne, butikkerne og/eller kasinoerne mulighed for at se din registrering.",
   "footer.item1": "Spillemyndigheden",
-  "footer.item2": "Lerchesgade 35, 6. sal",
+  "footer.item2": "Lerchesgade 35, 2",
   "footer.item3": "5000 Odense C",
   "footer.item4": "mail@spillemyndigheden.dk",
   "footer.item5": "CVR: 34730415",
