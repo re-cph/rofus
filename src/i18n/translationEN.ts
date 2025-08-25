@@ -97,7 +97,7 @@ export const translationEN = {
   "sectionAbout.section3.notaBene":
     "Only in these situations will the gambling operators, shops and/or the casinos be able to see your registration.",
   "footer.item1": "Spillemyndigheden",
-  "footer.item2": "Englandsgade 25, 6. sal",
+  "footer.item2": "Lerchesgade 35, 6. sal",
   "footer.item3": "5000 Odense C",
   "footer.item4": "mail@spillemyndigheden.dk",
   "footer.item5": "CVR: 34730415",

@@ -106,7 +106,7 @@ export const translationKL: TranslationType = {
   "sectionBand.link.text": "",
   "sectionBand.link.href": "",
   "footer.item1": "Spillemyndigheden",
-  "footer.item2": "Englandsgade 25, 6. sal",
+  "footer.item2": "Lerchesgade 35, 6. sal",
   "footer.item3": "5000 Odense C",
   "footer.item4": "mail@spillemyndigheden.dk",
   "footer.item5": "CVR: 34730415",
