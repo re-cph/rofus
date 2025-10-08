@@ -36,6 +36,10 @@ export const rofusLink = (lang: string) => `https://rofus${getSecret("ENVIRONMEN
         <li>{t("floatingLogin.list3")}</li>
       </ul>
 
+      <div style={{ color: "red" }} class="font-bold text-center">
+        Det er i øjeblikket ikke muligt at logge på ROFUS, da Nemlogin er nede
+      </div>
+
       <Button
         href={rofusLink(lang)}
         className="my-5 w-full"
