@@ -66,7 +66,7 @@ export const translationEN = {
   "sectionAbout.section1.text3": "via the Danish Gambling Authority’s",
   "sectionAbout.section1.text4": "or to:",
   "sectionAbout.section1.text5":
-    "Spillemyndigheden\nLerchesgade 35, 2\n5000 Odense C",
+    "Spillemyndigheden\nLerchesgade 35, 6\n5000 Odense C",
   "sectionAbout.section2.title": "Call or write to ROFUS",
   "sectionAbout.section2.content":
     "Write to ROFUS via the Danish Gambling Authority’s",
@@ -97,7 +97,7 @@ export const translationEN = {
   "sectionAbout.section3.notaBene":
     "Only in these situations will the gambling operators, shops and/or the casinos be able to see your registration.",
   "footer.item1": "Spillemyndigheden",
-  "footer.item2": "Lerchesgade 35, 2",
+  "footer.item2": "Lerchesgade 35, 6",
   "footer.item3": "5000 Odense C",
   "footer.item4": "mail@spillemyndigheden.dk",
   "footer.item5": "CVR: 34730415",
